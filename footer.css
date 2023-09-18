@@ -107,7 +107,7 @@
     z-index: 99;
     width: 50px;
     height: 50px;
-    background-color:red;
+    background-color:#f80;
     color:black;
     border: none;
     cursor: pointer;
@@ -117,11 +117,11 @@
     }
     #scrollToTopButton:hover, i:hover {
     background-color:white;
-    color:red;
+    color:#f80;
     }
     #nav:hover
   {
-    background-color:#e60e23!important;
+    background-color:#f80!important;
   
   }
   
@@ -137,7 +137,7 @@
   .fas:hover{background: none!important ;}
   .nav-item{ flex-wrap:wrap;}
   .menu li a:hover {
-    color: red !important;
+    color:#f80 !important;
     opacity: 0.5;
   }
   
