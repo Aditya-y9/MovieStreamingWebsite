@@ -10,7 +10,7 @@
   margin-left: 20px;
 }
 .menu li a:hover {
-  color: red !important;
+  color: orange !important;
   opacity: 0.5;
 }
 
@@ -80,7 +80,7 @@ img {
   background-color: lime;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color:lime !important;
+  background-color:#f80 !important;
 }
 ::-webkit-scrollbar-track:hover {
   background-color: white;
