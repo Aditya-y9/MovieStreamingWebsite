@@ -101,12 +101,14 @@ marquee {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background: dark gray;
 }
+
 .logo {
   width: 110px;
   height: 90px;
   padding: 3px;
   margin: 0;
   padding: 0;
+  background-color: transparent;
 }
 
 .online {
@@ -147,7 +149,7 @@ marquee {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 10));
+    transform: translateX(calc(-250px * 7));
   }
 }
 
@@ -387,6 +389,7 @@ iframe {
   z-index: 2;
   float: left;
   margin-top: 10px;
+  background-color: transparent;
 }
 .bottom-gap {
   margin-bottom: 100px;
@@ -606,12 +609,16 @@ iframe {
   justify-content: space-between;
   padding: 10px 20px;
 }
+body{
+  background-color: transparent;
+}
 .footer-logo {
   width: 150px;
   height: 120px;
   padding: 3px;
   margin: 0px 0px 0px 10px;
   padding: 0;
+  background-color: transparent;
 }
 .footer-heading {
   color: white;

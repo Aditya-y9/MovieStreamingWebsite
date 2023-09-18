@@ -44,7 +44,7 @@ img {
 .movie_info {
   color: #f80;
 }
-
+mix-blend-mode: multiply;
 .movie_info i {
   font-size: 10px;
 }
