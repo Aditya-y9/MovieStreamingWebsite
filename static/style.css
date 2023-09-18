@@ -7,6 +7,7 @@
 body {
   background: black;
   margin: 0;
+  background-color: transparent;
 }
 .menu {
   background: black;
@@ -136,12 +137,14 @@ marquee {
   width: 90%;
   display: grid;
   place-items: center;
+  box-shadow: 0 4px 8px 0 linear-gradient(yellow,#8B0000);
 }
 
 .slide_track {
   display: flex;
   width: calc(250px * 20);
   animation: scroll 10s linear infinite;
+  box-shadow: 0 4px 8px 0 linear-gradient(yellow,#8B0000);
 }
 
 @keyframes scroll {
@@ -160,6 +163,7 @@ marquee {
   align-items: center;
   padding: 15px;
   perspective: 100px;
+  box-shadow: 0 4px 8px 0 linear-gradient(yellow,#8B0000);
 }
 
 img {
