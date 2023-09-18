@@ -34,7 +34,7 @@ img {
   color: white;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
 
-  box-shadow: 0 0 15px red !important;
+  box-shadow: 0 0 15px #f80 !important;
 }
 
 .movie_card img {
@@ -42,7 +42,7 @@ img {
 }
 
 .movie_info {
-  color: red;
+  color: #f80;
 }
 
 .movie_info i {
@@ -56,7 +56,7 @@ img {
 }
 
 .section-title {
-  color: red;
+  color: #f80;
   font-size: 25px;
   margin-bottom: 40px;
 }
@@ -229,7 +229,7 @@ img {
   border-radius: 5px;
   display: none;
   position: absolute;
-  background-color: black;
+  background-color: rgb(246, 135, 0);
   min-width: 160px;
   z-index: 1;
 }
@@ -244,9 +244,9 @@ img {
 }
 
 .dropdown-content a:hover {
-  background-color: red;
+  background-color: #f80;
   color: white;
-  text-decoration: none;
+  text-decoration: chartreuse;
 }
 
 .col img {
