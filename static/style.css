@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
+  animation: alternate-reverse 1s linear infinite;
 }
 body {
   background: black;
@@ -98,9 +99,10 @@ body {
 
 marquee {
   color:#cbfd03;
-  font-size: 50px;
+  font-size:30px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background: dark gray;
+
 }
 
 .logo {
