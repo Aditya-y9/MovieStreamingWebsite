@@ -79,7 +79,7 @@ body {
   color: #7bdf1d;
 }
 #nav:hover {
-  background-color: #e60e23 !important;
+  background-color: #f80 !important;
 }
 .fas:hover {
   background: none !important ;
@@ -91,14 +91,14 @@ body {
   color: #7bdf1d;
 }
 .menu li a:hover {
-  color: red !important;
+  color: #f80 !important;
   opacity: 0.5;
 }
 
 marquee {
-  color: red;
-  font-size: 25px;
-  font-family: Arial;
+  color: #f80;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background: black;
 }
 .logo {
@@ -139,11 +139,7 @@ marquee {
 .slide_track {
   display: flex;
   width: calc(250px * 20);
-  animation: scroll 15s linear infinite;
-}
-
-.slide_track:hover {
-  animation-play-state: paused;
+  animation: scroll 10s linear infinite;
 }
 
 @keyframes scroll {
@@ -372,7 +368,7 @@ iframe {
 .redline-address {
   border: none;
   height: 3px;
-  background-color: #e71328;
+  background-color: #f80;
   width: 140px;
   margin-bottom: 20px;
 }
@@ -395,25 +391,7 @@ iframe {
 .bottom-gap {
   margin-bottom: 100px;
 }
-/*validation css*/
-/* input.ng-valid {
-  background-color: #dff0d8;
-}
-input.ng-invalid {
-  background-color: #f2dede;
-}
-input.ng-pristine {
-  background-color: white;
-}
-textarea.ng-invalid {
-  background-color: #f2dede;
-}
-textarea.ng-pristine {
-  background-color: white;
-}
-textarea.ng-valid {
-  background-color: #dff0d8;
-} */
+
 
 .fill {
   width: 100%;
@@ -493,7 +471,7 @@ textarea.ng-valid {
 .input:not(:placeholder-shown).input:not(:focus) + label {
   transform: translateY(-25px);
   font-size: 10px;
-  color: #e71328;
+  color: #f80;
   text-transform: uppercase;
   font-weight: 600;
   padding-left: 10px;
@@ -545,7 +523,7 @@ textarea.ng-valid {
   content: "";
   height: 2px;
   width: 100%;
-  background: #e71328;
+  background: #f80;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.4s ease;
@@ -567,9 +545,9 @@ textarea.ng-valid {
   padding: 0.4rem 1.4rem;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: #e71328;
+  background-color: #f80;
   color: #000;
-  border: 2px solid #e71328;
+  border: 2px solid #f80;
   font-weight: 600;
   z-index: 100;
   transition: 0.3s box-shadow;
@@ -578,8 +556,8 @@ textarea.ng-valid {
   border-radius: 0.25rem;
 }
 .fill .sm-button:hover {
-  box-shadow: 0 0 10px rgba(231, 19, 40, 0.7), 0 0 15px rgba(231, 19, 40, 0.7),
-    0 0 20px rgba(231, 19, 40, 0.7);
+  box-shadow: 0 0 10px #f80, 0 0 15px #f80, 0 0 20px #f80;
+    0 0 20px #f80;
   transition: 0.3s box-shadow;
   -webkit-transition: 0.3s box-shadow;
 }
@@ -597,11 +575,11 @@ textarea.ng-valid {
 
 ::-webkit-scrollbar-track {
   border: 5px solid #2c2f30;
-  background-color: red;
+  background-color: #f80;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: red !important;
+  background-color: #f80 !important;
 }
 
 ::-webkit-scrollbar-track:hover {
@@ -610,7 +588,7 @@ textarea.ng-valid {
 
 ::-webkit-scrollbar {
   width: 15px;
-  background-color: #2c2f30;
+  background-color: black;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -657,7 +635,7 @@ textarea.ng-valid {
 .footer-middle a i:hover {
   background-color: white;
   border-radius: 50px;
-  color: red;
+  color: #f80;
 }
 .footer-middle-list-item {
   list-style: none;
@@ -671,7 +649,7 @@ textarea.ng-valid {
   color: white;
 }
 .footer-middle-list-item a:hover {
-  color: red;
+  color: #f80;
 }
 .footer-right {
   margin-top: -15px;
@@ -787,7 +765,7 @@ textarea.ng-valid {
 }
 
 .dropdown-content a:hover {
-  background-color: red;
+  background-color: #f80;
   color: white;
   text-decoration: none;
 }
