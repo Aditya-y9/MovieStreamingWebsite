@@ -110,7 +110,7 @@ marquee {
 }
 
 .online {
-  color: red;
+  color:#f80;
   font-size: 27px;
   padding: 10px 25px;
   text-align: center;
@@ -221,13 +221,13 @@ img:hover {
 }
 
 .maincontainer h2 {
-  color: red;
+  color: #f80;
   text-align: center;
 }
 .foot {
   text-align: center;
   background-color: black;
-  color: red;
+  color: #f80;
   height: 50px;
   margin: 30px;
 }
@@ -268,7 +268,7 @@ img:hover {
   margin-top: 10%;
   margin-right: 50%;
   margin-bottom: 50%;
-  background: red;
+  background: #f80;
   color: white;
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
@@ -295,12 +295,13 @@ img:hover {
   margin: 1rem;
 }
 .red {
-  color: #e71328;
+  color: #f80;
 }
 .redline {
   width: 50px;
   height: 3px;
-  background-color: #e71328;
+  background-color: #f80
+  ;
   border: none;
   margin: 0 auto;
 }
@@ -677,7 +678,7 @@ textarea.ng-valid {
 }
 .footer-contact-button {
   font-size: 20px;
-  background-color: red;
+  background-color: #f80;
   color: black;
   padding: 10px;
   border: none;
@@ -686,12 +687,12 @@ textarea.ng-valid {
 }
 .footer-contact-button:hover {
   background-color: white;
-  color: red;
+  color: #f80;
 }
 .footer-bottom-tagline {
-  color: white;
-  font-size: 15px;
-  font-family: cursive;
+  color: #f80;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 25px;
 }
 
