@@ -19,7 +19,7 @@
     width: 100%;
     height: 100vh;
     z-index: 99999999;
-    background: url('loaderLogo.webp'); /* your icon gif file path */
+    background: url('orangelogo.png'); /* your icon gif file path */
     background-repeat: no-repeat;
     background-color: black;
     background-position: center;
@@ -54,7 +54,7 @@
     font-size: 3rem;
   }
   span {
-    color: rgb(187, 14, 14);
+    color: #f80;
   }
   .text-container p {
     color: #fff;
@@ -112,19 +112,19 @@
   .text-container .button {
     color: #fff;
     text-decoration: none;
-    background-color: rgb(165, 7, 7);
+    background-color: #f80;
     }
   .text-container .button:hover {
     color: #fff;
     text-decoration: none;
-    background-color: rgb(202, 6, 6);
+    background-color: #f80;
     transition:  all 500ms;
   }
   .button {
     color: #fff;
     text-decoration: none;
-    background-color: rgb(165, 7, 7);
-    box-shadow: 0 5px #660707;
+    background-color: #f80;
+    box-shadow: 0 5px #b80;
     display: inline-block;
     opacity: 0.9;
   }
@@ -154,12 +154,12 @@
     text-align: center;
   }
   .bottom-text-container .watch , .bottom-text-container .repeat{
-    background-color: rgb(145, 9, 9);
+    background-color: #f80;
     border: none;
   }
   .bottom-text-container .chill {
-    border:1px solid rgb(165, 7, 7);
-    color:rgb(165, 7, 7)
+    border:1px solid #f80;
+    color:#f80;
   }
   .bottom-text-container1 {
     display: flex;
