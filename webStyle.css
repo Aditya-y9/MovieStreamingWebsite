@@ -34,7 +34,7 @@ img {
   color: white;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
 
-  box-shadow: 0 0 15px #f80 !important;
+  box-shadow: 0 0 15px lime !important;
 }
 
 .movie_card img {
@@ -56,13 +56,13 @@ img {
 }
 
 .section-title {
-  color: #f80;
+  color: lime;
   font-size: 25px;
   margin-bottom: 40px;
 }
 
 .movie_info_rating {
-  color: goldenrod;
+  color: lime;
   float: right;
 }
 
@@ -77,10 +77,10 @@ img {
 
 ::-webkit-scrollbar-track {
   border: 5px solid black;
-  background-color: #f80;
+  background-color: lime;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color:#f80 !important;
+  background-color:lime !important;
 }
 ::-webkit-scrollbar-track:hover {
   background-color: white;
@@ -127,7 +127,7 @@ img {
 }
 
 .footer-distributed .footer-left p {
-  color: #8f9296;
+  color: lime;
   font-size: 14px;
   margin: 0;
 }
@@ -229,7 +229,7 @@ img {
   border-radius: 5px;
   display: none;
   position: absolute;
-  background-color: rgb(246, 135, 0);
+  background-color: lime;
   min-width: 160px;
   z-index: 1;
 }
@@ -244,7 +244,7 @@ img {
 }
 
 .dropdown-content a:hover {
-  background-color: #f80;
+  background-color: limegreen;
   color: white;
   text-decoration: chartreuse;
 }

@@ -76,10 +76,10 @@ body {
   }
 }
 .nav-link.b:hover {
-  color: #7bdf1d;
+  color: #cbfd03;
 }
 #nav:hover {
-  background-color: #f80 !important;
+  background-color: #cbfd03 !important;
 }
 .fas:hover {
   background: none !important ;
@@ -88,18 +88,18 @@ body {
   flex-wrap: wrap;
 }
 .nav-item:hover {
-  color: #7bdf1d;
+  color: #cbfd03;
 }
 .menu li a:hover {
-  color: #f80 !important;
+  color: #cbfd03 !important;
   opacity: 0.5;
 }
 
 marquee {
-  color: #f80;
+  color:#cbfd03;
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background: black;
+  background: dark gray;
 }
 .logo {
   width: 110px;
@@ -110,12 +110,12 @@ marquee {
 }
 
 .online {
-  color:#f80;
+  color: #cbfd03;
   font-size: 27px;
   padding: 10px 25px;
   text-align: center;
   display: block;
-  background: black;
+  background: #141414;
 }
 
 .buddy {
@@ -217,13 +217,13 @@ img:hover {
 }
 
 .maincontainer h2 {
-  color: #f80;
+  color: #cbfd03;
   text-align: center;
 }
 .foot {
   text-align: center;
   background-color: black;
-  color: #f80;
+  color: #cbfd03;
   height: 50px;
   margin: 30px;
 }
@@ -264,7 +264,7 @@ img:hover {
   margin-top: 10%;
   margin-right: 50%;
   margin-bottom: 50%;
-  background: #f80;
+  background: #cbfd03;
   color: white;
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
@@ -291,12 +291,12 @@ img:hover {
   margin: 1rem;
 }
 .red {
-  color: #f80;
+  color: #cbfd03;
 }
 .redline {
   width: 50px;
   height: 3px;
-  background-color: #f80
+  background-color: #cbfd03
   ;
   border: none;
   margin: 0 auto;
