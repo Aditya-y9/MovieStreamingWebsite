@@ -7,7 +7,7 @@
 summary {
     font-size: 1.25rem;
     font-weight: 600;
-    background-color: #fff;
+    background-color: #d8d95c;
     color: #333;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -55,8 +55,8 @@ summary {
     color: white;
   }
   summary:active{
-    color:red;
+    color:#d8d95c;
   }
   summary:hover{
-    color:red;
+    color:#d8d95c;
   }
