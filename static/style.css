@@ -285,13 +285,13 @@ img:hover {
 }
 /* Contact Us CSS starts*/
 .box {
-  background: url("https://cdn.pixabay.com/photo/2017/09/17/08/39/curtain-2757815_960_720.png")
+  background: black
     no-repeat center center/cover;
   color: white;
-  text-align: center;
   z-index: 1;
 }
 .text {
+  text-align: center;
   padding: 100px 0;
 }
 .box p {
