@@ -4,7 +4,7 @@
  }
 
  .footer-distributed {
-   background-color: #292c2f;
+   background-color: #1d2731;
    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
    box-sizing: border-box;
    width: 100%;
@@ -65,7 +65,7 @@
    background-color: #647681;
    border-radius: 2px;
    font-size: 20px;
-   color: #ffffff;
+   color: #d8d95c;
    text-align: center;
    line-height: 35px;
    margin-left: 3px;
@@ -107,7 +107,7 @@
     z-index: 99;
     width: 50px;
     height: 50px;
-    background-color:#f80;
+    background-color:#d8d95c;
     color:black;
     border: none;
     cursor: pointer;
@@ -117,11 +117,11 @@
     }
     #scrollToTopButton:hover, i:hover {
     background-color:white;
-    color:#f80;
+    color:#d8d95c;
     }
     #nav:hover
   {
-    background-color:#f80!important;
+    background-color:#d8d95c!important;
   
   }
   
@@ -137,7 +137,7 @@
   .fas:hover{background: none!important ;}
   .nav-item{ flex-wrap:wrap;}
   .menu li a:hover {
-    color:#f80 !important;
+    color:#d8d95c !important;
     opacity: 0.5;
   }
   
@@ -160,7 +160,7 @@
     background-color: transparent;
   }
   .footer-heading{
-    color:red;
+    color:#d8d95c;
   }
   .footer-left, .footer-right, .footer-middle{
   text-align:center;
@@ -176,9 +176,9 @@
   margin-top:30px;
   }
   .footer-middle a i:hover{
-  background-color:white;
+  background-color:#d8d95c;
   border-radius:50px;
-  color:red;
+  color:#d8d95c;
   }
   .footer-middle-list-item{
   list-style:none;
@@ -189,17 +189,17 @@
   }
   .footer-middle-list-item a{
   text-decoration:none;
-  color:white;
+  color:#d8d95c;
   }
   .footer-middle-list-item a:hover{
-  color:red;
+  color:#d8d95c;
   }
   .footer-right{
     margin-top:-15px;
   }
   .footer-contact-button{
   font-size:20px;
-  background-color:red;
+  background-color:#d8d95c;
   color:black;
   padding:10px;
   border:none;
@@ -208,10 +208,10 @@
   }
   .footer-contact-button:hover{
   background-color:white;
-  color:red;
+  color:#d8d95c;
   }
   .footer-bottom-tagline{
-  color:white;
+  color:#d8d95c;
   font-size:15px;
   font-family:cursive;
   margin-bottom:25px;

@@ -2,8 +2,10 @@
   font-family: 'Ubuntu', sans-serif;
 }
 .poster, .movie_card {
-  box-shadow: 5px 15px 25px yellow !important;
-
+  box-shadow: 5px 5px 5px #D8D95C !important;
+  border:solid 2px #d8d95c;
+  border-radius: 5px;
+  
 }
 
 .flip-card_i{
@@ -44,7 +46,7 @@ h1{
   text-align: center;
   transition: transform 2s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 linear-gradient(yellow,#8B0000);
+  box-shadow: 0 4px 8px 0 linear-gradient(#D8D95C,#fffaa0);
 }
 
 .flip-card_i:hover .flip-card-inner_i {
@@ -54,7 +56,7 @@ h1{
   width: 50px;
  height: 35px;
  border:none;
- border:solid 2px grey;
+ border:solid 2px #36454f;
  border-radius: 5px;
  background: rgba(255, 255, 255,0);
  font-size: 1em;
@@ -78,10 +80,10 @@ h1{
     height: 35px;
     margin-top: auto;
     border:none;
-    border:solid 2px white;
+    border:solid 2px #36454f;
     border-radius: 5px;
-    background-color: #e7e7e7; 
-    color: black;
+    background-color: #fffaa0; 
+    color: #36454f;
     font-size: 1em;
   }
 
@@ -90,10 +92,10 @@ h1{
    height: 35px;
    margin-top: auto;
    border:none;
-   border:solid 2px white;
+   border:solid 2px #36454f;
    border-radius: 5px;
-   background-color: #e7e7e7; 
-   color: black;
+   background-color: #fffaa0; 
+   color: #36454f;
    font-size: 1em;
 
   }
@@ -119,14 +121,14 @@ h1{
     float:right;
 }
 .flip-card-front_i {
-  background-color: #bbb;
+  background-color: #36454f;
   color: black;
 }
 
 .flip-card-back_i {
   width: 250px;
   height: 360px;
-  background-image: linear-gradient(black,#8B0000);
-  color: white;
+  background-image: linear-gradient(#D8D95C,#fffaa0);
+  color: #36454f;
   transform: rotateY(180deg);
 }

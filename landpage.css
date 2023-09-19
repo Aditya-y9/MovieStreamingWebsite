@@ -21,7 +21,7 @@
     z-index: 99999999;
     background: url('orangelogo.png'); /* your icon gif file path */
     background-repeat: no-repeat;
-    background-color: black;
+    background-color: #073059;
     background-position: center;
     }
 
@@ -31,7 +31,7 @@
         }
 
   body {
-    background-color: rgb(0, 0, 0);
+    background-color: #073059;
     display: flex;
     align-items: center;
     justify-content: center;

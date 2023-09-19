@@ -17,13 +17,106 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+  <link href="./static/style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="static/bootstrap.min.css">
   <link rel="stylesheet" href="static/style-min.css">
   <link rel="stylesheet" href="cards.css">
 
 </head>
 
+<!------------------------Scroll to top button------------------------------------------------>
+<style>
+  #scrollToTopButton{
+position:fixed;
+bottom: 40px;
+right: 25px;
+font-size: 25px;
+z-index: 99;
+width: 50px;
+height: 50px;
+background-color:#D8D95C;
+color: #6e6e6e;
+border: none;
+cursor: pointer;
+outline: none;
+padding: 6px;
+border-radius: 50%;
+}
+#scrollToTopButton:hover, i:hover {
+background-color:white;
+color:#D8D95C;
+}
+#nav:hover
+{
+  background-color:#D8D95C!important;
 
+}
+#header-nav .nav-link {
+  color: #D8D95C;
+  font-size: 20px;
+  margin-left: 20px;
+}
+    @media only screen and (max-width: 1400px){
+  #header-nav .nav-link {
+    color: #D8D95C;
+    font-size: 18px;
+    margin-left: 18px;
+  }
+  #searchText{
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1133px) and (max-width: 1275px) {
+  #header-nav .nav-link {
+    color: #D8D95C;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+}
+@media only screen and (min-width: 1035px) and (max-width: 1132px) {
+  #header-nav .nav-link {
+    color: #D8D95C;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+  #searchText{
+    width: 120px;
+  }
+  #submitBtn{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1034px) {
+  #header-nav .nav-link {
+    color: #D8D95C;
+    font-size: 14px;
+    margin-left: 10px;
+  } 
+
+#searchText{
+  width: 100px;
+}
+#submitBtn{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+}
+
+.container {
+  text-align: center;
+}
+.nav-item :hover{
+  margin-bottom: 10px;
+  /* background-color: aquamarine; */
+  border-bottom: 3px;
+  border-color: #D8D95C;
+  border-bottom-style: solid;
+}
+</style>
 
 <body>
   
@@ -31,40 +124,49 @@
 
 
   <div class="scroll-bar">
+    
     <!-- navbar starts -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-gradient" id="header-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/Logo/TheaterLogo.png" alt="" width="15"
-            height="12"></a>
-        <button id="nav" class="navbar-toggler" id="nav" style="background: color lime;" type="button" data-bs-toggle="collapse"
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+            height="24"></a>
+        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#D8D95C" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" style="background-color: gradient;"></span>
+          <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
         </button>
         
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item ">
-              <a class="nav-link active s" aria-current="page" href="home.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Home</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="movies.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Movies</a>
+              <a class="nav-link" href="movies.html">Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="web-series.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'" >Web Series</a>
+              <a class="nav-link" href="web-series.html">Web Series</a>
             </li>
-            
             <li class="nav-item">
-              <a class="nav-link" href="contactus.html" this.style.color = 'red'>About Us</a>
+              <a class="nav-link" href="kids.html">Kids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tv.html">TV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="premium.html">Premium</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
             </li>
             <li>
-            
+              <!-- Genre dropdown starts-->
               <div>
-                <div class="dropdown" style="position: relative; disPlay: inline-block; padding-top: 5px; padding-left: 15px;">
+                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
                     <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
                         Genres
                     </button>
-                    <div class="dropdown-content" style="color: white;">
+                    <div class="dropdown-content" style="color: #D8D95C;">
                         <a href="popular.html">Popular</a>
                         <a href="crime.html">Crime</a>
                         <a href="suspense.html">Suspense & Thriller</a>
@@ -76,10 +178,14 @@
             </li>
             <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
               <li>
-                <button  type="button" class="btn btn-light" onclick="logout()"  onMouseOver="this.style.color='yellow'" onMouseOut="this.style.color='white'">Logout</button>
+                <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
               </li>
             </div>
           </ul>
+          <form id="searchForm" class="d-flex">
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
         </div>
       </div>
       </nav>
@@ -169,10 +275,10 @@
                   <img src="./Images/inception.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1>Inception</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2010</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h42m<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.8</button>
+                <h1 style="color:#36454f; font-weight: bold;">Inception</h1>
+                  <button class="btn_i b3_i"  title="Year" style="color:#36454f">2010</button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">2h42m<button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.8</button>
                 </span>
                 <br />
                 <br />
@@ -212,10 +318,10 @@
                   <img src="./Images/dark knight.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1 style="font-size: 30px;">The Dark Knight</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2008</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h32m<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9.0</button>
+                <h1 style="color:#36454f; font-weight: bold;">The Dark Knight</h1>
+                  <button class="btn_i b3_i"  title="Year" style="color:#36454f">2008</button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">2h32m<button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">9.0</button>
                 </span>
                 <br />
                 <br />
@@ -249,10 +355,10 @@
                   <img src="./Images/Parasite.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1>Parasite</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h12m<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
+                <h1 style="color:#36454f; font-weight: bold;">Parasite</h1>
+                  <button class="btn_i b3_i"  title="Year" style="color:#36454f">2019</button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">2h12m<button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.6</button>
                 </span>
                 <br />
                 <br />
@@ -283,10 +389,10 @@
                   <img src="./Images/We're_the_Millers_poster.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1>We're the Millers</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">1h58m</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">7.0</button>
+                <h1 style="color:#36454f; font-weight: bold;">We're the Millers</h1>
+                  <button class="btn_i b3_i"  title="Year" style="color:#36454f">2013</button>
+                  <button class="btn_i b2_i"  title="Seasons" style="color:#36454f">1h58m</button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">7.0</button>
                 </span>
                 <br />
                 <br />
@@ -327,10 +433,10 @@
                   <img src="./Images/aaa.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1>Andaz Apna Apna</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">1994</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h41m<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
+                <h1 style="color:#36454f; font-weight: bold;">Andaz Apna Apna</h1>
+                  <button class="btn_i b3_i"  title="Year" style="color:#36454f">1994</button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">2h41m<button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.1</button>
                 </span>
                 <br />
                 <br />
@@ -359,10 +465,10 @@
                   <img src="./Images/chakde.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1>Chakde India</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2007</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2h33m<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                <h1 style="color:#36454f; font-weight: bold;">Chakde India</h1>
+                  <button class="btn_i b3_i"  title="Year" style="color:#36454f">2007</button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">2h33m<button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.2</button>
                 </span>
                 <br />
                 <br />
@@ -397,10 +503,10 @@
                   <img src="./Images/milkha.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1 style="font-size: 37px;">Bhaag Milkha Bhaag</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">3h9m<button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                <h1 style="color:#36454f; font-weight: bold;">Bhaag Milkha Bhaag</h1>
+                  <button class="btn_i b3_i"  title="Year" style="color:#36454f">2013</button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">3h9m<button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.2</button>
                 </span>
                 <br />
                 <br />
@@ -434,10 +540,10 @@
                     <img src="./Images/wed.jpg" alt="Avatar" style="width:250px;height:360px;">
                 </div>
                 <div class="flip-card-back_i">
-                  <h1>A Wednesday</h1>
-                    <button class="btn_i b3_i"  title="Year" style="color:white">2008</button>
-                    <button class="btn_i b2_i"  title="Seasons" style="color:white">1h44m</button>
-                    <button class="btn_i b1_i"  title="IMDb" style="color:white">8.1</button>
+                  <h1 style="color:#36454f; font-weight: bold;">A Wednesday</h1>
+                    <button class="btn_i b3_i"  title="Year" style="color:#36454f">2008</button>
+                    <button class="btn_i b2_i"  title="Seasons" style="color:#36454f">1h44m</button>
+                    <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.1</button>
                   </span>
                   <br />
                   <br />
@@ -488,10 +594,10 @@
                   <img src="./Images/mirzapur.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1>Mirzapur</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">2</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                <h1 style="color:#36454f; font-weight: bold;">Mirzapur</h1>
+                  <button class="btn_i b3_i"  title="Year" style="color:#36454f">2018</button>
+                  <button class="btn_i b2_i"  title="Seasons" style="color:#36454f">2</button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.4</button>
                 </span>
                 <br />
                 <br />
@@ -524,10 +630,10 @@
                   <img src="./Images/sacred.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1 style="font-size: 30px;">Sacred Games</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                  <button class="btn_i b2_i"  title="Minutes" style="color:white">2</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">8.7</button>
+                <h1 style="color:#36454f; font-weight: bold;"">Sacred Games</h1>
+                  <button class="btn_i b3_i"  title="Year" style="color:#36454f">2018</button>
+                  <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">2</button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.7</button>
                 </span>
                 <br />
                 <br />
@@ -560,10 +666,10 @@
                   <img src="./Images/kota.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1 style="font-size: 30px;">Kota Factory</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9.0</button>
+                <h1 style="color:#36454f; font-weight: bold;">Kota Factory</h1>
+                  <button class="btn_i b3_i"  title="Year" style="color:#36454f">2019</button>
+                  <button class="btn_i b2_i"  title="Seasons" style="color:#36454f">1</button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">9.0</button>
                 </span>
                 <br />
                 <br />
@@ -596,10 +702,10 @@
                   <img src="./Images/upsc.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1>Aspirants</h1>
-                  <button class="btn_i b3_i"  title="Year" style="color:white">2021</button>
-                  <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                  <button class="btn_i b1_i"  title="IMDb" style="color:white">9</button>
+                <h1 style="color:#36454f; font-weight: bold;">Aspirants</h1>
+                  <button class="btn_i b3_i"  title="Year" style="color:#36454f">2021</button>
+                  <button class="btn_i b2_i"  title="Seasons" style="color:#36454f">1</button>
+                  <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">9</button>
                 </span>
                 <br />
                 <br />
@@ -650,10 +756,10 @@
                 <img src="./Images/bat.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1>The Dark Knight Rises</h1>
-                <button class="btn_i b3_i" title="Year" style="color:white">2012</button>
-                <button class="btn_i b2_i" title="Minutes" style="color:white">2h44m</button>
-                <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
+                <h1 style="color:#36454f; font-weight: bold;">The Dark Knight Rises</h1>
+                <button class="btn_i b3_i" title="Year" style="color:#36454f">2012</button>
+                <button class="btn_i b2_i" title="Minutes" style="color:#36454f">2h44m</button>
+                <button class="btn_i b1_i" title="IMDb" style="color:#36454f">8.4</button>
                 </span>
                 <br />
                 <br />
@@ -681,10 +787,10 @@
                 <img src="./Images/narnia.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1 style="font-size: 30px;">The Chronicles of Narnia</h1>
-                <button class="btn_i b3_i" title="Year" style="color:white">2005</button>
-                <button class="btn_i b2_i" title="minutes" style="color:white">2h30m</button>
-                <button class="btn_i b1_i" title="IMDb" style="color:white">6.9</button>
+                <h1 style="color:#36454f; font-weight: bold;"">The Chronicles of Narnia</h1>
+                <button class="btn_i b3_i" title="Year" style="color:#36454f">2005</button>
+                <button class="btn_i b2_i" title="minutes" style="color:#36454f">2h30m</button>
+                <button class="btn_i b1_i" title="IMDb" style="color:#36454f">6.9</button>
                 </span>
                 <br />
                 <br />
@@ -712,10 +818,10 @@
                 <img src="./Images/endgame.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1>Avengers : Endgame</h1>
-                <button class="btn_i b3_i" title="Year" style="color:white">2019</button>
-                <button class="btn_i b2_i" title="Minutes" style="color:white">3h2m</button>
-                <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
+                <h1 style="color:#36454f; font-weight: bold;">Avengers : Endgame</h1>
+                <button class="btn_i b3_i" title="Year" style="color:#36454f">2019</button>
+                <button class="btn_i b2_i" title="Minutes" style="color:#36454f">3h2m</button>
+                <button class="btn_i b1_i" title="IMDb" style="color: #36454f">8.4</button>
                 </span>
                 <br />
                 <br />
@@ -744,10 +850,10 @@
                 <img src="./Images/infinity.jpg" alt="Avatar" style="width:250px;height:360px;">
               </div>
               <div class="flip-card-back_i">
-                <h1>Avengers : Infinity War</h1>
-                <button class="btn_i b3_i" title="Year" style="color:white">2018</button>
-                <button class="btn_i b2_i" title="Minutes" style="color:white">2h40m<button>
-                    <button class="btn_i b1_i" title="IMDb" style="color:white">8.4</button>
+                <h1 style="color:#36454f; font-weight: bold;">Avengers : Infinity War</h1>
+                <button class="btn_i b3_i" title="Year" style="color:#36454f">2018</button>
+                <button class="btn_i b2_i" title="Minutes" style="color:#36454f">2h40m<button>
+                    <button class="btn_i b1_i" title="IMDb" style="color:#36454f">8.4</button>
                     </span>
                     <br />
                     <br />
