@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 
 <head>
   <title>Contact Us</title>
@@ -165,42 +165,63 @@
 
 
   <div class="scroll-bar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+    <!-- navbar starts -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="header-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/Logo/TheaterLogo.png" alt="" width="30"
-            height="24"></a>
-        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#5b8fb9" type="button" data-bs-toggle="collapse"
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/Logo/TheaterLogo.png" alt="" width="15"
+            height="12"></a>
+        <button id="nav" class="navbar-toggler" id="nav" style="background: color lime;" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+          <span class="navbar-toggler-icon" style="background-color: gradient;"></span>
         </button>
         
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            <li class="nav-item ">
+              <a class="nav-link active s" aria-current="page" href="home.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="movies.html">Movies</a>
+              <a class="nav-link " href="movies.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="web-series.html">Web Series</a>
+              <a class="nav-link " href="web-series.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'" >Web Series</a>
             </li>
-
+            
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html" this.style.color = 'red'>About Us</a>
+            </li>
+            <li>
+            
               <div>
-                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+                <div class="dropdown" style="position: relative; disPlay: inline-block; padding-top: 5px; padding-left: 15px;">
                     <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
                         Genres
                     </button>
-                    <div class="dropdown-content" style="color: #b6eada;">
+                    <div class="dropdown-content" style="color: white;">
                         <a href="popular.html">Popular</a>
                         <a href="crime.html">Crime</a>
                         <a href="suspense.html">Suspense & Thriller</a>
                         <a href="action.html">Action</a>
-                        
                       </div>
                 </div>
               </div>
-              </nav>
+              <!-- Genre dropdown ends-->
+            </li>
+            <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+              <li>
+                <button  type="button" class="btn btn-light" onclick="logout()"  onMouseOver="this.style.color='yellow'" onMouseOut="this.style.color='white'">Logout</button>
+              </li>
+            
+              <form id="searchForm" class="d-flex">
+                <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </ul>
+        </div>
+      </div>
+      </nav>
 
     <div class="container address">
       <div class="row add-row">
