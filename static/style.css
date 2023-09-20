@@ -285,8 +285,7 @@ img:hover {
 }
 /* Contact Us CSS starts*/
 .box {
-  background: url("https://cdn.pixabay.com/photo/2017/09/17/08/39/curtain-2757815_960_720.png")
-    no-repeat center center/cover;
+  background-color: #141414;
   color: white;
   text-align: center;
   z-index: 1;
@@ -376,7 +375,7 @@ iframe {
 .redline-address {
   border: none;
   height: 3px;
-  background-color: #f80;
+  background-color: #d8d95c;
   width: 140px;
   margin-bottom: 20px;
 }
@@ -480,7 +479,7 @@ iframe {
 .input:not(:placeholder-shown).input:not(:focus) + label {
   transform: translateY(-25px);
   font-size: 10px;
-  color: #f80;
+  color: #d8d95c;
   text-transform: uppercase;
   font-weight: 600;
   padding-left: 10px;
@@ -532,7 +531,7 @@ iframe {
   content: "";
   height: 2px;
   width: 100%;
-  background: #f80;
+  background: #d8d95c;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.4s ease;
@@ -554,9 +553,9 @@ iframe {
   padding: 0.4rem 1.4rem;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: #f80;
+  background-color: #d8d95c;
   color: #000;
-  border: 2px solid #f80;
+  border: 2px solid #d8d95c;
   font-weight: 600;
   z-index: 100;
   transition: 0.3s box-shadow;
@@ -565,8 +564,8 @@ iframe {
   border-radius: 0.25rem;
 }
 .fill .sm-button:hover {
-  box-shadow: 0 0 10px #f80, 0 0 15px #f80, 0 0 20px #f80;
-    0 0 20px #f80;
+  box-shadow: 0 0 10px #d8d95c, 0 0 15px #d8d95c, 0 0 20px #d8d95c;
+    0 0 20px #d8d95c;
   transition: 0.3s box-shadow;
   -webkit-transition: 0.3s box-shadow;
 }
@@ -584,11 +583,11 @@ iframe {
 
 ::-webkit-scrollbar-track {
   border: 5px solid #2c2f30;
-  background-color: #f80;
+  background-color: #d8d95c;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #f80 !important;
+  background-color: #d8d95c !important;
 }
 
 ::-webkit-scrollbar-track:hover {
@@ -648,7 +647,7 @@ body{
 .footer-middle a i:hover {
   background-color: white;
   border-radius: 50px;
-  color: #f80;
+  color: #d8d95c;
 }
 .footer-middle-list-item {
   list-style: none;
@@ -662,14 +661,14 @@ body{
   color: white;
 }
 .footer-middle-list-item a:hover {
-  color: #f80;
+  color: #d8d95c;
 }
 .footer-right {
   margin-top: -15px;
 }
 .footer-contact-button {
   font-size: 20px;
-  background-color: #f80;
+  background-color: #d8d95c;
   color: black;
   padding: 10px;
   border: none;
@@ -678,10 +677,10 @@ body{
 }
 .footer-contact-button:hover {
   background-color: white;
-  color: #f80;
+  color: #d8d95c;
 }
 .footer-bottom-tagline {
-  color: #f80;
+  color: #d8d95c;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 25px;
@@ -778,7 +777,7 @@ body{
 }
 
 .dropdown-content a:hover {
-  background-color: #f80;
+  background-color: #d8d95c;
   color: white;
   text-decoration: none;
 }

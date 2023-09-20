@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>ApnaTheatre</title>
-  <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+  <title> Streamify</title>
+  <link rel="shortcut icon" href="Images/Logo/TheaterLogo.png" type="image/x-icon">
 
   <!-- Font  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,14 +28,107 @@
   <link rel="stylesheet" href="footer.css">
   
 </head>
+<style>
+  #scrollToTopButton{
+position:fixed;
+bottom: 40px;
+right: 25px;
+font-size: 25px;
+z-index: 99;
+width: 50px;
+height: 50px;
+background-color:#d8d95c;
+color:#6e6e6e;
+border: none;
+cursor: pointer;
+outline: none;
+padding: 6px;
+border-radius: 50%;
+}
+#scrollToTopButton:hover, i:hover {
+background-color:bisque;
+color:#36454f;
+}
+#header-nav .nav-link {
+  color: #d8d95c;
+  font-size: 20px;
+  margin-left: 20px;
+}
+    @media only screen and (max-width: 1400px){
+  #header-nav .nav-link {
+    color: #d8d95c;
+    font-size: 18px;
+    margin-left: 18px;
+  }
+  #searchText{
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1133px) and (max-width: 1275px) {
+  #header-nav .nav-link {
+    color: #d8d95c;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+}
+@media only screen and (min-width: 1035px) and (max-width: 1132px) {
+  #header-nav .nav-link {
+    color: #d8d95c;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+  #searchText{
+    width: 120px;
+  }
+  #submitBtn{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1034px) {
+  #header-nav .nav-link {
+    color: #d8d95c;
+    font-size: 14px;
+    margin-left: 10px;
+  } 
+
+#searchText{
+  width: 100px;
+}
+#submitBtn{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+}
+
+.container {
+  text-align: center;
+}
+.nav-item :hover{
+  margin-bottom: 10px;
+  /* background-color: aquamarine; */
+  border-bottom: 3px;
+  border-color: #d8d95c;
+  border-bottom-style:inset;
+}
+
+
+</style>
+
 <body>
+  
+  <div class="scroll-bar">
+    
     <!-- navbar starts -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/Logo/TheaterLogo.png" alt="" width="30"
             height="24"></a>
-        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#D8D95C" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
         </button>
@@ -43,72 +136,62 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="home.html" style="text-decoration: none;">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="movies.html">Movies</a>
+              <a class="nav-link" href="movies.html" style="text-decoration: none;">Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="web-series.html">Web Series</a>
+              <a class="nav-link" href="web-series.html" style="text-decoration: none;">Web Series</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="kids.html">Kids</a>
+              <a class="nav-link" href="foryou.html" style="text-decoration: none;">For You</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tv.html">TV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="premium.html">Premium</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
+              <a class="nav-link" href="premium.html" style="text-decoration: none;">Premium</a>
             </li>
             <li>
               <!-- Genre dropdown starts-->
               <div>
-                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
-                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 2px; padding-left: 20px; ">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">
                         Genres
                     </button>
-                    <div class="dropdown-content" style="color: white;">
-                        <a href="popular.html">Popular</a>
-                        <a href="crime.html">Crime</a>
-                        <a href="suspense.html">Suspense & Thriller</a>
-                        <a href="action.html">Action</a>
-                        <a href="fantasy.html">Sci-Fi & Fantasy</a>
-                        <a href="documentary.html">Documentary</a>
-                        <a href="horror.html">Horror</a>
-                        <a href="drama.html">Drama</a>
-                        <a href="war.html">War & Politics</a>
-                        <a href="comedy.html">Comedy</a>
-                        <a href="romance.html">Romance</a>
-                        <a href="anime.html">Anime</a>
+                    <div class="dropdown-content" style="color: #D8D95C;">
+                        <a href="popular.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight:550px; color: #D8D95C;">Popular</a>
+                        <a href="crime.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color:#D8D95C;">Crime</a>
+                        <a href="suspense.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font: weight 525px;; color: #D8D95C;">Suspense & Thriller</a>
+                        <a href="action.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color: #D8D95C;">Action</a>
                       </div>
                 </div>
               </div>
               <!-- Genre dropdown ends-->
             </li>
-            <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+            <div style="position: relative; display: inline-block; padding-top: 2px; padding-left: 280px;">
               <li>
-                <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
+                <button  type="button" class="btn btn-light" onclick="logout()" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Logout</button>
               </li>
             </div>
           </ul>
           <form id="searchForm" class="d-flex">
-            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-            <button class="btn btn-danger" type="submit">Search</button>
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search" >
+            <button class="btn btn-danger" type="submit" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Search</button>
           </form>
         </div>
       </div>
       </nav>
 
         <!-- navbar ends -->
+<br>
+<hr>
+        <!-- navbar ends -->
 
       <!-- ======= Frequently Asked Questions Section ======= -->
-      <div class="faq-section"><h2 align="center">Frequently Asked Questions</h2>
+      <div class="faq-section"><h2 align="center" style="color: #D8D95C;">Frequently Asked Questions</h2>
+      <hr>
+      <br>
       <details open> 
-        <summary align="center">What is Movie Streaming?</summary>
+        <summary align="center" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#36454f'" style="font-weight:550px; color: #36454f;">What is Movie Streaming?</summary>
       <div class="faq__content">
           <p>Movie Streaming is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
             <p>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
@@ -117,7 +200,7 @@
       <br>
       <br>
       <details>
-        <summary align="center">How much does Movie Streaming cost?</summary>
+        <summary align="center" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#36454f'" style="font-weight:550px; color: #36454f;">How much does Movie Streaming cost?</summary>
         <div class="faq__content">
           <p>Watch Movie Streaming on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 199 to ₹ 799 a month. No extra costs, no contracts.</p>
         </div>
@@ -125,7 +208,7 @@
       <br>
       <br>
       <details>
-        <summary align="center">Where can I watch?</summary>
+        <summary align="center" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#36454f'" style="font-weight:550px; color: #36454f;">Where can I watch?</summary>
         <div class="faq__content">
           <p>Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Movie Streaming account to watch instantly on the web at moviestreaming.com from your personal computer or on any internet-connected device that offers the Movie Streaming app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
               You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Movie Streaming with you anywhere.
@@ -135,7 +218,7 @@
         <br>
         <br>
       <details>
-        <summary align="center">How do I cancel?</summary>
+        <summary align="center" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#36454f'" style="font-weight:550px; color: #36454f;">How do I cancel?</summary>
         <div class="faq__content">
           <p>Movie Streaming is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
         </div>
@@ -143,7 +226,7 @@
         <br>
         <br>
       <details>
-        <summary align="center">What can I watch on Movie Streaming?</summary>
+        <summary align="center" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#36454f'" style="font-weight:550px; color: #36454f;">What can I watch on Movie Streaming?</summary>
         <div class="faq__content">
           <p>Movie Streaming has an extensive library of feature films, documentaries, TV shows, anime, award-winning Movie Streaming originals, and more. Watch as much as you want, anytime you want.</p>
         </div>
@@ -151,7 +234,7 @@
         <br>
         <br>
       <details>
-        <summary align="center">Is Movie Streaming good for kids?</summary>
+        <summary align="center" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#36454f'" style="font-weight:550px; color: #36454f;">Is Movie Streaming good for kids?</summary>
         <div class="faq__content">
           <p>The Movie Streaming Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.<br>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
         </div>
@@ -159,64 +242,45 @@
         <br>
       </details>
       <!-------------------------------Footer-------------------------------->
-    <footer class="footer">
-      <hr class="footer-hr">
-      <div class="footer-content m-0">
-        <div class="footer-left">
-          <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
-              height="24"></a>
-          <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
-        </div>
-        <div class="footer-middle">
-          <h2 class="footer-heading">Follow Us</h2>
-          <ul class="footer-middle-list icons">
-            <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i
-                class="fab fa-facebook-f facebook" style="color:red"></i></a>
-            <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i
-                class="fab fa-twitter twitter" style="color:red"></i></a>
-            <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i
-                class="fab fa-linkedin linkedin" style="color:red"></i></a>
-            <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i
-                class="fab fa-instagram instagram" style="color:red"></i></a>
-            <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i
-                class="fab fa-github github" style="color:red"></i></a>
-          </ul>
-        </div>
-        <div class="footer-middle">
-          <h2 class="footer-heading">Services</h2>
-          <ul class="footer-middle-list">
-            <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
-            <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
-            <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-            <li class="footer-middle-list-item"><a href="news.html">Coming soon</a> </li>
-            <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
-            <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
-          </ul>
-        </div>
-        <div class="footer-middle">
-          <h2 class="footer-heading">Try Our App</h2>
-          <ul class="footer-middle-list icons">
-            <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
-            <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
-          </ul>
-        </div>
-        <div class="footer-right mt-0">
-          <p class="footer-links mb-0">
-          <h2 class="footer-heading d-flex">Contact Us</h2>
-          <p class="footer-bottom-tagline">Feel free to contact us.</p>
-          <a class="footer-contact-button" href="contactus.html">Contact</a>
-          </p>
-        </div>
-      </div>
-      <hr class="footer-hr">
-      <div class="footer-copyright">
-        <p>Copyright &copy; and &reg; Since
-          <script>
-            document.write(new Date().getFullYear())
-          </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)
-        </p>
-      </div>
-    </footer>
+      <div id="waterdrop"></div>
+      <footer class="footer">
+        <hr class="footer-hr">
+          <div class="footer-content">
+              <div class="footer-left">
+                  <a href="home.html"><img class="footer-logo" src="Images/Logo/TheaterLogo.png" alt="" width="30" height="24"></a>
+                  <p class="footer-bottom-tagline" style="color: bisque;">Discover, Stream, Repeat</p>
+              </div>
+              <div class="footer-middle">
+                  <h2 class="footer-heading" style="color: bisque;">Follow Us</h2>
+                  <ul class="footer-middle-list icons">
+                      
+                      <a class="footer-links" href="https://twitter.com/vjti" target="_blank" style="color: bisque;"><i class="fab fa-twitter twitter" ></i></a>
+                      <a class="footer-links" href="https://in.linkedin.com/school/veermata-jijabai-technological-institute/" target="_blank" style="color: bisque;"><i class="fab fa-linkedin linkedin" ></i></a>
+                      <a class="footer-links" href="https://instagram.com/vjtistudentactivities?igshid=MzRlODBiNWFlZA==" target="_blank" style="color: bisque;"><i class="fab fa-instagram instagram" ></i></a>
+                      <a class="footer-links" href="https://github.com/Aditya-y9/MovieStreamingWebsite.git" target="_blank" style="color: bisque;"><i class="fab fa-github github" ></i></a>
+                  </ul>
+              </div>
+              <div class="footer-middle">
+                  <h2 class="footer-heading" style="color: bisque; text-align: center;" >Services</h2>
+                  <ul class="footer-middle-list">
+                      <li class="footer-middle-list-item"><a href="home.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Enjoy Latest Movies</a> </li>
+                      <li class="footer-middle-list-item"><a href="web-series.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Watch Web-Series</a> </li>
+                      <li class="footer-middle-list-item"><a href="faq.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">FAQs</a> </li>
+                  </ul>
+              </div>
+              
+              <div class="footer-right">
+                  <p class="footer-links">
+                      <h2 class="footer-heading" style="color: bisque;">Contact Us</h2>
+                      <br>
+                      <a class="footer-contact-button" href="contactus.html" style="text-decoration: none;">Contact</a>
+                  </p>
+              </div>
+          </div>
+          <hr class="footer-hr">
+          
+      </footer>
+  
 
     <!----------------------scroll back to top button-->
     <button id="scrollToTopButton" title="Go to top" class="ml-5">

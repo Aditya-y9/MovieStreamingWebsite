@@ -7,7 +7,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ApnaTheatre | Web Series</title>
+  <title>Streamify</title>
+  <link rel="shortcut icon" href="Images/Logo/TheaterLogo.png" type="image/x-icon">
 
   <!-- Font  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,29 +31,29 @@
 
 
 
-    #scrollToTopButton{
-  position: fixed;
-  bottom: 40px;
-  right: 25px;
-  font-size: 25px;
-  z-index: 99;
-  width: 50px;
-  height: 50px;
-  background-color:orange;
-  color:black;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 6px;
-  border-radius: 50%;
-  }
-  #scrollToTopButton:hover, i:hover {
-  background-color:white;
-  color:orange;
-  }
+#scrollToTopButton{
+position:fixed;
+bottom: 40px;
+right: 25px;
+font-size: 25px;
+z-index: 99;
+width: 50px;
+height: 50px;
+background-color:#d8d95c;
+color:#6e6e6e;
+border: none;
+cursor: pointer;
+outline: none;
+padding: 6px;
+border-radius: 50%;
+}
+#scrollToTopButton:hover, i:hover {
+background-color:beige;
+color:#36454f;
+}
   #nav:hover
 {
-  background-color:orange!important;
+  background-color:#D8D95C!important;
 
 }
 .carousel-inner{
@@ -63,7 +64,7 @@
   margin-bottom: 10px;
   /* background-color: aquamarine; */
   border-bottom: 3px;
-  border-color: orange;
+  border-color: #D8D95C;
   border-bottom-style: solid;
 }
 
@@ -77,7 +78,7 @@
 .fas:hover{background: none!important ;}
 .nav-item{ flex-wrap:wrap;}
 .menu li a:hover {
-  color: orange !important;
+  color: #D8D95C !important;
   opacity: 0.5;
 }
 .navbar-nav{
@@ -122,7 +123,7 @@ margin-top:30px;
 .footer-middle a i:hover{
 background-color:white;
 border-radius:50px;
-color:orange;
+color:#D8D95C;
 }
 .footer-middle-list-item{
 list-style:none;
@@ -136,14 +137,14 @@ text-decoration:none;
 color:white;
 }
 .footer-middle-list-item a:hover{
-color:orange;
+color:#D8D95C;
 }
 .footer-right{
   margin-top:-15px;
 }
 .footer-contact-button{
 font-size:20px;
-background-color:orange;
+background-color:#D8D95C;
 color:black;
 padding:10px;
 border:none;
@@ -152,7 +153,7 @@ text-decoration:none;
 }
 .footer-contact-button:hover{
 background-color:white;
-color:orange;
+color:#D8D95C;
 }
 .footer-bottom-tagline{
 color:white;
@@ -199,28 +200,31 @@ font-size:18px;
   bottom: -70px !important;
 }
 #header-nav .nav-link {
-  color: white;
+  color: #d8d95c;
   font-size: 20px;
   margin-left: 20px;
 }
     @media only screen and (max-width: 1400px){
   #header-nav .nav-link {
-    color: white;
+    color: #d8d95c;
     font-size: 18px;
     margin-left: 18px;
+  }
+  #searchText{
+    width: 150px;
   }
 }
 
 @media only screen and (min-width: 1133px) and (max-width: 1275px) {
   #header-nav .nav-link {
-    color: white;
+    color: #d8d95c;
     font-size: 15px;
     margin-left: 10px;
   } 
 }
 @media only screen and (min-width: 1035px) and (max-width: 1132px) {
   #header-nav .nav-link {
-    color: white;
+    color: #d8d95c;
     font-size: 15px;
     margin-left: 10px;
   } 
@@ -235,10 +239,11 @@ font-size:18px;
 }
 @media only screen and (min-width: 993px) and (max-width: 1034px) {
   #header-nav .nav-link {
-    color: white;
+    color: #d8d95c;
     font-size: 14px;
     margin-left: 10px;
   } 
+
 
 #searchText{
   width: 100px;
@@ -248,6 +253,16 @@ font-size:18px;
   display: flex;
   justify-content: center;
 }
+}
+.container {
+  text-align: center;
+}
+.nav-item :hover{
+  margin-bottom: 10px;
+  /* background-color: aquamarine; */
+  border-bottom: 3px;
+  border-color: #d8d95c;
+  border-bottom-style:inset;
 }
 @media only screen and (max-width: 531px) {
   .poster {
@@ -272,9 +287,9 @@ font-size:18px;
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/Logo/orangelogo.png" alt="" width="30"
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/Logo/TheaterLogo.png" alt="" width="30"
             height="24"></a>
-        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#D8D95C" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
         </button>
@@ -282,61 +297,46 @@ font-size:18px;
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="home.html" style="text-decoration: none;">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="movies.html">Movies</a>
+              <a class="nav-link" href="movies.html" style="text-decoration: none;">Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="web-series.html">Web Series</a>
+              <a class="nav-link" href="web-series.html" style="text-decoration: none;">Web Series</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="kids.html">Kids</a>
+              <a class="nav-link" href="foryou.html" style="text-decoration: none;">For You</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tv.html">TV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="premium.html">Premium</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
+              <a class="nav-link" href="premium.html" style="text-decoration: none;">Premium</a>
             </li>
             <li>
               <!-- Genre dropdown starts-->
               <div>
-                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
-                    <button class="btn btn-outline-warning dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 2px; padding-left: 20px; ">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">
                         Genres
                     </button>
-                    <div class="dropdown-content" style="color: white;">
-                        <a href="popular.html">Popular</a>
-                        <a href="crime.html">Crime</a>
-                        <a href="suspense.html">Suspense & Thriller</a>
-                        <a href="action.html">Action</a>
-                        <a href="fantasy.html">Sci-Fi & Fantasy</a>
-                        <a href="documentary.html">Documentary</a>
-                        <a href="horror.html">Horror</a>
-                        <a href="drama.html">Drama</a>
-                        <a href="war.html">War & Politics</a>
-                        <a href="comedy.html">Comedy</a>
-                        <a href="romance.html">Romance</a>
-                        <a href="anime.html">Anime</a>
+                    <div class="dropdown-content" style="color: #D8D95C;">
+                        <a href="popular.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight:550px; color: #D8D95C;">Popular</a>
+                        <a href="crime.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color:#D8D95C;">Crime</a>
+                        <a href="suspense.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font: weight 525px;; color: #D8D95C;">Suspense & Thriller</a>
+                        <a href="action.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color: #D8D95C;">Action</a>
                       </div>
                 </div>
               </div>
               <!-- Genre dropdown ends-->
             </li>
-            <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+            <div style="position: relative; display: inline-block; padding-top: 2px; padding-left: 280px;">
               <li>
-                <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
+                <button  type="button" class="btn btn-light" onclick="logout()" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Logout</button>
               </li>
             </div>
           </ul>
           <form id="searchForm" class="d-flex">
-            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-            <button class="btn btn-warning type="submit">Search</button>
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search" >
+            <button class="btn btn-danger" type="submit" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Search</button>
           </form>
         </div>
       </div>
@@ -668,61 +668,67 @@ font-size:18px;
 
     </div>
     <!-------------------------------Footer-------------------------------->
+    <div id="waterdrop"></div>
     <footer class="footer">
       <hr class="footer-hr">
-      <div class="footer-content">
-        <div class="footer-left">
-          <a href="home.html"><img class="footer-logo" src="Images/Logo/orangelogo.png" alt="" width="30"
-              height="24"></a>
-          <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="home.html"><img class="footer-logo" src="Images/Logo/TheaterLogo.png" alt="" width="30" height="24"></a>
+                <p class="footer-bottom-tagline" style="color: bisque;">Discover, Stream, Repeat</p>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading" style="color: bisque;">Follow Us</h2>
+                <ul class="footer-middle-list icons">
+                    
+                    <a class="footer-links" href="https://twitter.com/vjti" target="_blank" style="color: bisque;"><i class="fab fa-twitter twitter" ></i></a>
+                    <a class="footer-links" href="https://in.linkedin.com/school/veermata-jijabai-technological-institute/" target="_blank" style="color: bisque;"><i class="fab fa-linkedin linkedin" ></i></a>
+                    <a class="footer-links" href="https://instagram.com/vjtistudentactivities?igshid=MzRlODBiNWFlZA==" target="_blank" style="color: bisque;"><i class="fab fa-instagram instagram" ></i></a>
+                    <a class="footer-links" href="https://github.com/Aditya-y9/MovieStreamingWebsite.git" target="_blank" style="color: bisque;"><i class="fab fa-github github" ></i></a>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading" style="color: bisque; text-align: center;" >Services</h2>
+                <ul class="footer-middle-list">
+                    <li class="footer-middle-list-item"><a href="home.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="web-series.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Watch Web-Series</a> </li>
+                    <li class="footer-middle-list-item"><a href="faq.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">FAQs</a> </li>
+                </ul>
+            </div>
+            
+            <div class="footer-right">
+                <p class="footer-links">
+                    <h2 class="footer-heading" style="color: bisque;">Contact Us</h2>
+                    <br>
+                    <a class="footer-contact-button" href="contactus.html" style="text-decoration: none;">Contact</a>
+                </p>
+            </div>
         </div>
-        <div class="footer-middle">
-        </div>
-        <div class="footer-middle">
-        </div>
-        <div class="footer-middle">
-        </div>
-        <div class="footer-right">
-          <p class="footer-links">
-          <h2 class="footer-heading">Contact Us</h2>
-          <p class="footer-bottom-tagline">Feel free to contact us.</p>
-          <a class="footer-contact-button" href="contactus.html">Contact</a>
-          </p>
-        </div>
-      </div>
-      <hr class="footer-hr">
-      <div class="footer-copyright">
+        <hr class="footer-hr">
         
-      </div>
     </footer>
 
-    <!----------------------scroll back to top button-->
-    <button id="scrollToTopButton" title="Go to top" class="ml-5">
-      <i class="fa fa-angle-double-up" aria-hidden="true"></i>
-    </button>
-    <script>
-      $(document).ready(function () {
+    <!-----------------scroll back to top button-->
+    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+        <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
+      </button>
+      <script>
+      $(document).ready(function(){
         var scrollTopButton = document.getElementById("scrollToTopButton");
         window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            scrollTopButton.style.display = "block";
-          } else {
-            scrollTopButton.style.display = "none";
-          }
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
         }
+      }
 
-        $("#scrollToTopButton").click(function () {
-          $('html ,body').animate({ scrollTop: 0 }, 800)
-        });
+      $("#scrollToTopButton").click(function(){
+      $('html ,body').animate({scrollTop : 0},800)
       });
-    </script>
-<script>
-  function logout(){
-    window.location.replace("login.html");
-  }
-  </script>
+      });
+      </script>
     <!-- footer scripts -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

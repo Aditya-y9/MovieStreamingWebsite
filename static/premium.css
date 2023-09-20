@@ -99,7 +99,7 @@ body {
     color: #fff;
 }
 .pricing.featured .featured {
-    background: #f0151f;
+    background: #d8d95c;
 }
 
 
@@ -201,20 +201,20 @@ body {
 } */
 .box1{
  
-  box-shadow: 2px 2px 6px white;
+  box-shadow: 2px 2px 6px bisque;
   display:inline-block;
   width:93%;
   margin: 5px 11px 5px 0px;
 }
 .box2{
-    box-shadow: 2px 2px 6px white;
+    box-shadow: 2px 2px 6px bisque;
     display:inline-block;
     width:93%;
     margin: 5px 11px 5px 0px;
   }
   .box3{
     
-    box-shadow: 2px 2px 6px white;
+    box-shadow: 2px 2px 6px bisque;
     display:inline-block;
 
     width:93%;
@@ -297,8 +297,8 @@ body {
     }
   }
   .gbtn{
-      color:white;
-      background-color: red;
+      color:bisque;
+      background-color: #d8d95c;
       height: 53px;
       width: 192px;
      margin: auto;
@@ -306,11 +306,11 @@ body {
      cursor: pointer;
   }
   .gbtn a{
-      color:white;
+      color:bisque;
   }
   a:hover {
       text-decoration: none !important;
-      color: white;
+      color: bisque;
   }
   .section-title{
     background-color: none;
@@ -319,11 +319,11 @@ body {
       margin-top: 45px;
   }
   .points{
-    color: white;
+    color: bisque;
     font-size: 18px;
   }
   .featured ul li{
-      color:white;
+      color:bisque;
       font-size: 17px;
       
   }
@@ -342,8 +342,8 @@ body {
     border-radius: 11px;
   }
   .featured:hover{
-    box-shadow: 3px 3px 5px #FD1C03;
-    border: 3px solid red;
+    box-shadow: 3px 3px 5px #d8d95c;
+    border: 3px solid yellow;
     height: 485px;
     transform: scale(1.1);
     /* height: 485px; */
@@ -354,9 +354,9 @@ body {
 
 }
   .gbtn:hover{
-    color:red;
-    background-color: white;
-    border:2px solid red;
+    color:#d8d95c;
+    background-color: bisque;
+    border:2px solid yellow;
   }
   .btn1{
     border-radius: 6px;
@@ -367,9 +367,9 @@ body {
     font-size: 20px !important;
   }
   .btn1:hover{
-      color:red !important;
-      background-color: white !important;
-      border:3px solid red !important;
+      color:#d8d95c !important;
+      background-color: bisque !important;
+      border:3px solid yellow !important;
       font-weight: 600;
   }
   .footer{
@@ -385,11 +385,11 @@ body {
   }
   .section-title ul li{
     content: "\2022";  
-    color: red;
+    color: #d8d95c;
   }
   .devices li{
     content: "\2022";  
-    color: white;
+    color: bisque;
   }
 /* Subscription Table End */
 
@@ -557,11 +557,11 @@ body {
       margin-top: 26px;
     }
     .points{
-        color: white;
+        color: bisque;
         font-size: 16px;
     }
     .featured ul li{
-        color:white;
+        color:bisque;
         font-size: 15px;
     }
     .column{
@@ -593,11 +593,11 @@ body {
       font-size: 28px;
     }
     .points{
-        color: white;
+        color: bisque;
         font-size: 16px;
     }
     .featured ul li{
-        color:white;
+        color:bisque;
         font-size: 15px;
     }
     .column{
@@ -627,11 +627,11 @@ body {
       margin-top: 26px;
     }
     .points{
-        color: white;
+        color: bisque;
         font-size: 16px;
     }
     .featured ul li{
-        color:white;
+        color:bisque;
         font-size: 15px;
     }
     .column{
@@ -642,4 +642,4 @@ body {
 
 }
 
-}
+

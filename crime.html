@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Streamify</title>
-    <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/Logo/TheaterLogo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <!-- Font  -->
@@ -34,8 +34,8 @@ font-size: 25px;
 z-index: 99;
 width: 50px;
 height: 50px;
-background-color:#D8D95C;
-color: #6e6e6e;
+background-color:#d8d95c;
+color:#6e6e6e;
 border: none;
 cursor: pointer;
 outline: none;
@@ -43,22 +43,17 @@ padding: 6px;
 border-radius: 50%;
 }
 #scrollToTopButton:hover, i:hover {
-background-color:white;
-color:#D8D95C;
-}
-#nav:hover
-{
-  background-color:#D8D95C!important;
-
+background-color:bisque;
+color:#36454f;
 }
 #header-nav .nav-link {
-  color: #D8D95C;
+  color: #d8d95c;
   font-size: 20px;
   margin-left: 20px;
 }
     @media only screen and (max-width: 1400px){
   #header-nav .nav-link {
-    color: #D8D95C;
+    color: #d8d95c;
     font-size: 18px;
     margin-left: 18px;
   }
@@ -69,14 +64,14 @@ color:#D8D95C;
 
 @media only screen and (min-width: 1133px) and (max-width: 1275px) {
   #header-nav .nav-link {
-    color: #D8D95C;
+    color: #d8d95c;
     font-size: 15px;
     margin-left: 10px;
   } 
 }
 @media only screen and (min-width: 1035px) and (max-width: 1132px) {
   #header-nav .nav-link {
-    color: #D8D95C;
+    color: #d8d95c;
     font-size: 15px;
     margin-left: 10px;
   } 
@@ -91,7 +86,7 @@ color:#D8D95C;
 }
 @media only screen and (min-width: 993px) and (max-width: 1034px) {
   #header-nav .nav-link {
-    color: #D8D95C;
+    color: #d8d95c;
     font-size: 14px;
     margin-left: 10px;
   } 
@@ -113,71 +108,77 @@ color:#D8D95C;
   margin-bottom: 10px;
   /* background-color: aquamarine; */
   border-bottom: 3px;
-  border-color: #D8D95C;
-  border-bottom-style: solid;
+  border-color: #d8d95c;
+  border-bottom-style:inset;
 }
+
+
 </style>
+
 <body>
+  
   <div class="scroll-bar">
+    
     <!-- navbar starts -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-gradient" id="header-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/Logo/TheaterLogo.png" alt="" width="15"
-            height="12"></a>
-        <button id="nav" class="navbar-toggler" id="nav" style="background: color lime;" type="button" data-bs-toggle="collapse"
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/Logo/TheaterLogo.png" alt="" width="30"
+            height="24"></a>
+        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#D8D95C" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" style="background-color: gradient;"></span>
+          <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
         </button>
         
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item ">
-              <a class="nav-link active s" aria-current="page" href="home.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Home</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html" style="text-decoration: none;">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="movies.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Movies</a>
+              <a class="nav-link" href="movies.html" style="text-decoration: none;">Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="web-series.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'" >Web Series</a>
+              <a class="nav-link" href="web-series.html" style="text-decoration: none;">Web Series</a>
             </li>
-            
             <li class="nav-item">
-              <a class="nav-link" href="contactus.html" this.style.color = 'red'>About Us</a>
+              <a class="nav-link" href="foryou.html" style="text-decoration: none;">For You</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="premium.html" style="text-decoration: none;">Premium</a>
             </li>
             <li>
-            
+              <!-- Genre dropdown starts-->
               <div>
-                <div class="dropdown" style="position: relative; disPlay: inline-block; padding-top: 5px; padding-left: 15px;">
-                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 2px; padding-left: 20px; ">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">
                         Genres
                     </button>
-                    <div class="dropdown-content" style="color: white;">
-                        <a href="popular.html">Popular</a>
-                        <a href="crime.html">Crime</a>
-                        <a href="suspense.html">Suspense & Thriller</a>
-                        <a href="action.html">Action</a>
+                    <div class="dropdown-content" style="color: #D8D95C;">
+                        <a href="popular.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight:550px; color: #D8D95C;">Popular</a>
+                        <a href="crime.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color:#D8D95C;">Crime</a>
+                        <a href="suspense.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font: weight 525px;; color: #D8D95C;">Suspense & Thriller</a>
+                        <a href="action.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color: #D8D95C;">Action</a>
                       </div>
                 </div>
               </div>
               <!-- Genre dropdown ends-->
             </li>
-            <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+            <div style="position: relative; display: inline-block; padding-top: 2px; padding-left: 280px;">
               <li>
-                <button  type="button" class="btn btn-light" onclick="logout()"  onMouseOver="this.style.color='yellow'" onMouseOut="this.style.color='white'">Logout</button>
+                <button  type="button" class="btn btn-light" onclick="logout()" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Logout</button>
               </li>
-            
-              <form id="searchForm" class="d-flex">
-                <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
             </div>
           </ul>
+          <form id="searchForm" class="d-flex">
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search" >
+            <button class="btn btn-danger" type="submit" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Search</button>
+          </form>
         </div>
       </div>
       </nav>
-    
-            <!-- navbar ends -->
+
+        <!-- navbar ends -->
 
         <div class="maincontainer">
             <div class="container">
@@ -215,11 +216,7 @@ color:#D8D95C;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Criminal Justice</b>
-                          <br>
-                          IMDb - 8.1
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -254,11 +251,7 @@ color:#D8D95C;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Peaky Blinders</b>
-                          <br>
-                          IMDb - 8.8
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -293,11 +286,7 @@ color:#D8D95C;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Special Ops</b>
-                          <br>
-                          IMDb - 8.6
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -331,11 +320,7 @@ color:#D8D95C;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Breaking Bad</b>
-                          <br>
-                          IMDb - 9.5
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -370,11 +355,7 @@ color:#D8D95C;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Apaharan</b>
-                          <br>
-                          IMDb - 8.3
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -409,11 +390,7 @@ color:#D8D95C;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Joker</b>
-                          <br>
-                          IMDb - 8.4
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -447,11 +424,7 @@ color:#D8D95C;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Delhi Crime</b>
-                          <br>
-                          IMDb - 8.5
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -484,11 +457,7 @@ color:#D8D95C;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Paatal Lok</b>
-                          <br>
-                          IMDb - 7.8
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -527,11 +496,7 @@ color:#D8D95C;
                             }
                           </script>
                     </div>
-                      <div class="flim">
-                          <b>Gangs of Wasseypur</b>
-                          <br>
-                          IMDb - 8.2
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -543,28 +508,67 @@ color:#D8D95C;
 
 
     <!-------------------------------Footer-------------------------------->
+    <div id="waterdrop"></div>
     <footer class="footer">
       <hr class="footer-hr">
-      <div class="footer-right">
-        <div class="footer-right">
-          <div class="transbox">
-           
-          <a href="home.html"><img class="footer-logo" src="Images/Logo/TheaterLogo.png" alt="" width="30"
-              height="24"></a>
-          <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
-          </div>
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="home.html"><img class="footer-logo" src="Images/Logo/TheaterLogo.png" alt="" width="30" height="24"></a>
+                <p class="footer-bottom-tagline" style="color: bisque;">Discover, Stream, Repeat</p>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading" style="color: bisque;">Follow Us</h2>
+                <ul class="footer-middle-list icons">
+                    
+                    <a class="footer-links" href="https://twitter.com/vjti" target="_blank" style="color: bisque;"><i class="fab fa-twitter twitter" ></i></a>
+                    <a class="footer-links" href="https://in.linkedin.com/school/veermata-jijabai-technological-institute/" target="_blank" style="color: bisque;"><i class="fab fa-linkedin linkedin" ></i></a>
+                    <a class="footer-links" href="https://instagram.com/vjtistudentactivities?igshid=MzRlODBiNWFlZA==" target="_blank" style="color: bisque;"><i class="fab fa-instagram instagram" ></i></a>
+                    <a class="footer-links" href="https://github.com/Aditya-y9/MovieStreamingWebsite.git" target="_blank" style="color: bisque;"><i class="fab fa-github github" ></i></a>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading" style="color: bisque; text-align: center;" >Services</h2>
+                <ul class="footer-middle-list">
+                    <li class="footer-middle-list-item"><a href="home.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="web-series.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Watch Web-Series</a> </li>
+                    <li class="footer-middle-list-item"><a href="faq.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">FAQs</a> </li>
+                </ul>
+            </div>
+            
+            <div class="footer-right">
+                <p class="footer-links">
+                    <h2 class="footer-heading" style="color: bisque;">Contact Us</h2>
+                    <br>
+                    <a class="footer-contact-button" href="contactus.html" style="text-decoration: none;">Contact</a>
+                </p>
+            </div>
         </div>
- 
-          </ul>
-        </div>
-       
+        <hr class="footer-hr">
         
-        <div class="footer-right">
-          <p class="footer-links">
-          <h2 class="footer-heading">Contact Us</h2>
-          <p class="footer-bottom-tagline">We would be very happy to hear from you.</p>
-          <a class="footer-contact-button" href="contactus.html">Contact Us</a>
-          </p>
+    </footer>
+
+    <!-----------------scroll back to top button-->
+    <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
+        <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
+      </button>
+      <script>
+      $(document).ready(function(){
+        var scrollTopButton = document.getElementById("scrollToTopButton");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
+        }
+      }
+
+      $("#scrollToTopButton").click(function(){
+      $('html ,body').animate({scrollTop : 0},800)
+      });
+      });
+      </script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

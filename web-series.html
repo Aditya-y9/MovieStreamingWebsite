@@ -7,7 +7,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ApnaTheatre | Web Series</title>
+  <title>Streamify</title>
+  <link rel="shortcut icon" href="Images/Logo/TheaterLogo.png" type="image/x-icon">
 
   <!-- Font  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,230 +27,253 @@
 
 <!------------------------Scroll to top button------------------------------------------------>
 <style>
-    #scrollToTopButton{
-  position: fixed;
+
+
+
+  #scrollToTopButton{
+  position:fixed;
   bottom: 40px;
   right: 25px;
   font-size: 25px;
   z-index: 99;
   width: 50px;
   height: 50px;
-  background-color:red;
-  color:black;
+  background-color:#d8d95c;
+  color:#6e6e6e;
   border: none;
   cursor: pointer;
   outline: none;
   padding: 6px;
   border-radius: 50%;
   }
-  .carousel-inner{
-  cursor: pointer;
-}
   #scrollToTopButton:hover, i:hover {
   background-color:white;
-  color:red;
+  color:#36454f;
   }
-  #nav:hover
-{
-  background-color:#e60e23!important;
-
-}
-    .logo {
-  width: 110px;
-  height: 90px;
-  padding: 3px;
-  margin: 0;
-  padding: 0;
-}
-.nav-item :hover{
-  margin-bottom: 10px;
-  /* background-color: aquamarine; */
-  border-bottom: 3px;
-  border-color: red;
-  border-bottom-style: solid;
-}
-.fas:hover{background: none!important ;}
-.nav-item{ flex-wrap:wrap;}
-.menu li a:hover {
-  color: red !important;
-  opacity: 0.5;
-}
-.navbar-nav{
-  display: flex;
-  align-items: center;
-  padding: 0px 7.5px;
-}
-    @media only screen and (max-width: 1400px){
-  #header-nav .nav-link {
-    color: white;
-    font-size: 18px;
-    margin-left: 18px;
+    #nav:hover
+  {
+    background-color:#D8D95C!important;
+  
   }
-}
-
-@media only screen and (min-width: 1133px) and (max-width: 1275px) {
+  .carousel-inner{
+    cursor: pointer;
+  }
+  
+  .nav-item :hover{
+    margin-bottom: 10px;
+    /* background-color: aquamarine; */
+    border-bottom: 3px;
+    border-color: #D8D95C;
+    border-bottom-style: solid;
+  }
+  
+      .logo {
+    width: 110px;
+    height: 90px;
+    padding: 3px;
+    margin: 0;
+    padding: 0;
+  }
+  .fas:hover{background: none!important ;}
+  .nav-item{ flex-wrap:wrap;}
+  .menu li a:hover {
+    color: #D8D95C !important;
+    opacity: 0.5;
+  }
+  .navbar-nav{
+    display: flex;
+    align-items: center;
+    padding: 0px 7.5px;
+  }
+  
+  /* CSS FOR FOOTER */
+  .footer{
+  margin-bottom:15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .footer-content{
+    display:flex;
+    justify-content:space-between;
+    padding: 10px 20px;
+  }
+  .footer-logo{
+    width: 150px;
+    height: 120px;
+    padding: 3px;
+    margin:0px 0px 0px 10px;
+    padding: 0;
+  }
+  .footer-heading{
+    color:white;
+  }
+  .footer-left, .footer-right, .footer-middle{
+  text-align:center;
+  }
+  .icons{
+    margin-left:-30px;
+  }
+  .footer-links i{
+  font-size:30px;
+  width:40px;
+  padding:5px;
+  height:40px;
+  margin-top:30px;
+  }
+  .footer-middle a i:hover{
+  background-color:white;
+  border-radius:50px;
+  color:#D8D95C;
+  }
+  .footer-middle-list-item{
+  list-style:none;
+  font-size:15px;
+  font-family:cursive;
+  margin:5px 0px 0px 15px;
+  text-align:left;
+  }
+  .footer-middle-list-item a{
+  text-decoration:none;
+  color:white;
+  }
+  .footer-middle-list-item a:hover{
+  color:#D8D95C;
+  }
+  .footer-right{
+    margin-top:-15px;
+  }
+  .footer-contact-button{
+  font-size:20px;
+  background-color:#D8D95C;
+  color:black;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  text-decoration:none;
+  }
+  .footer-contact-button:hover{
+  background-color:white;
+  color:#D8D95C;
+  }
+  .footer-bottom-tagline{
+  color:white;
+  font-size:15px;
+  font-family:cursive;
+  margin-bottom:25px;
+  }
+  
+  
+  .footer-copyright{
+  text-align:center;
+  color:white;
+  margin-top:20px;
+  font-size:18px;
+  }
+  .footer-hr{
+      color:grey;
+      font-weight:bold;
+  }
+  /* .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);} */
+  
+  /***************** Media Queries *********************/
+  
+  @media (max-width: 600px) {
+  .footer-content{
+     display:block;
+     text-align:center;
+  }
+  .footer-middle-list-item{
+    text-align:center;
+    margin-left:-20px;
+  }
+  
+  .footer-left, .footer-middle, .footer-right{
+    margin-top:50px;
+  }
+  }
+  
+  #waterdrop {
+    height: 30px;
+  }
+  
+  #waterdrop canvas {
+    bottom: -70px !important;
+  }
   #header-nav .nav-link {
-    color: white;
-    font-size: 15px;
-    margin-left: 10px;
-  } 
-}
-@media only screen and (min-width: 1035px) and (max-width: 1132px) {
-  #header-nav .nav-link {
-    color: white;
-    font-size: 15px;
-    margin-left: 10px;
-  } 
+    color: #d8d95c;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+      @media only screen and (max-width: 1400px){
+    #header-nav .nav-link {
+      color: #d8d95c;
+      font-size: 18px;
+      margin-left: 18px;
+    }
+    #searchText{
+      width: 150px;
+    }
+  }
+  
+  @media only screen and (min-width: 1133px) and (max-width: 1275px) {
+    #header-nav .nav-link {
+      color: #d8d95c;
+      font-size: 15px;
+      margin-left: 10px;
+    } 
+  }
+  @media only screen and (min-width: 1035px) and (max-width: 1132px) {
+    #header-nav .nav-link {
+      color: #d8d95c;
+      font-size: 15px;
+      margin-left: 10px;
+    } 
+    #searchText{
+      width: 120px;
+    }
+    #submitBtn{
+      width: 60px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media only screen and (min-width: 993px) and (max-width: 1034px) {
+    #header-nav .nav-link {
+      color: #d8d95c;
+      font-size: 14px;
+      margin-left: 10px;
+    } 
+  
+  
   #searchText{
-    width: 120px;
+    width: 100px;
   }
   #submitBtn{
-    width: 60px;
+    width: 50px;
     display: flex;
     justify-content: center;
   }
-}
-@media only screen and (min-width: 993px) and (max-width: 1034px) {
-  #header-nav .nav-link {
-    color: white;
-    font-size: 14px;
-    margin-left: 10px;
-  } 
-
-#searchText{
-  width: 100px;
-}
-#submitBtn{
-  width: 50px;
-  display: flex;
-  justify-content: center;
-}
-}
-/* CSS FOR FOOTER */
-.footer{
-margin-bottom:15px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.footer-content{
-  display:flex;
-  justify-content:space-between;
-  padding: 10px 20px;
-}
-.footer-logo{
-  width: 150px;
-  height: 120px;
-  padding: 3px;
-  margin:0px 0px 0px 10px;
-  padding: 0;
-}
-.footer-heading{
-  color:white;
-}
-.footer-left, .footer-right, .footer-middle{
-text-align:center;
-}
-.icons{
-  margin-left:-30px;
-}
-.footer-links i{
-font-size:30px;
-width:40px;
-height:40px;
-padding:5px;
-margin-top:30px;
-}
-.footer-middle a i:hover{
-background-color:white;
-border-radius:50px;
-color:red;
-}
-.footer-middle-list-item{
-list-style:none;
-font-size:15px;
-font-family:cursive;
-margin:5px 0px 0px 15px;
-text-align:left;
-}
-.footer-middle-list-item a{
-text-decoration:none;
-color:white;
-}
-.footer-middle-list-item a:hover{
-color:red;
-}
-.footer-right{
-  margin-top:-15px;
-}
-.footer-contact-button{
-font-size:20px;
-background-color:red;
-color:black;
-padding:10px;
-border:none;
-border-radius:10px;
-text-decoration:none;
-}
-.footer-contact-button:hover{
-background-color:white;
-color:red;
-}
-.footer-bottom-tagline{
-color:white;
-font-size:15px;
-font-family:cursive;
-margin-bottom:25px;
-}
-
-
-.footer-copyright{
-text-align:center;
-color:white;
-margin-top:20px;
-font-size:18px;
-}
-.footer-hr{
-    color:grey;
-    font-weight:bold;
-}
-/* .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);} */
-
-/***************** Media Queries *********************/
-
-@media (max-width: 600px) {
-.footer-content{
-   display:block;
-   text-align:center;
-}
-.footer-middle-list-item{
-  text-align:center;
-  margin-left:-20px;
-}
-
-.footer-left, .footer-middle, .footer-right{
-  margin-top:50px;
-}
-}
-
-#waterdrop {
-  height: 30px;
-}
-
-#waterdrop canvas {
-  bottom: -70px !important;
-}
-
-@media only screen and (max-width: 531px) {
+  }
+  .container {
+    text-align: center;
+  }
+  .nav-item :hover{
+    margin-bottom: 10px;
+    /* background-color: aquamarine; */
+    border-bottom: 3px;
+    border-color: #d8d95c;
+    border-bottom-style:inset;
+  }
+  @media only screen and (max-width: 531px) {
+    .poster {
+    margin: 50px auto !important;
+    width: 230px !important;
+  }
+  }
+  
   .poster {
-  margin: 50px auto !important;
-  width: 230px !important;
-}
-}
-
-.poster {
-  margin: 50px 20px;
-}
-
-</style>    
+    margin: 50px 20px;
+  }
+  </style>    
 
 
 </head>
@@ -262,9 +286,9 @@ font-size:18px;
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/Logo/TheaterLogo.png" alt="" width="30"
             height="24"></a>
-        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#D8D95C" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
         </button>
@@ -272,61 +296,46 @@ font-size:18px;
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="home.html" style="text-decoration: none;">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="movies.html">Movies</a>
+              <a class="nav-link" href="movies.html" style="text-decoration: none;">Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="web-series.html">Web Series</a>
+              <a class="nav-link" href="web-series.html" style="text-decoration: none;">Web Series</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="kids.html">Kids</a>
+              <a class="nav-link" href="foryou.html" style="text-decoration: none;">For You</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tv.html">TV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="premium.html">Premium</a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
+              <a class="nav-link" href="premium.html" style="text-decoration: none;">Premium</a>
             </li>
             <li>
               <!-- Genre dropdown starts-->
               <div>
-                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
-                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 2px; padding-left: 20px; ">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">
                         Genres
                     </button>
-                    <div class="dropdown-content" style="color: white;">
-                        <a href="popular.html">Popular</a>
-                        <a href="crime.html">Crime</a>
-                        <a href="suspense.html">Suspense & Thriller</a>
-                        <a href="action.html">Action</a>
-                        <a href="fantasy.html">Sci-Fi & Fantasy</a>
-                        <a href="documentary.html">Documentary</a>
-                        <a href="horror.html">Horror</a>
-                        <a href="drama.html">Drama</a>
-                        <a href="war.html">War & Politics</a>
-                        <a href="comedy.html">Comedy</a>
-                        <a href="romance.html">Romance</a>
-                        <a href="anime.html">Anime</a>
+                    <div class="dropdown-content" style="color: #D8D95C;">
+                        <a href="popular.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight:550px; color: #D8D95C;">Popular</a>
+                        <a href="crime.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color:#D8D95C;">Crime</a>
+                        <a href="suspense.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font: weight 525px;; color: #D8D95C;">Suspense & Thriller</a>
+                        <a href="action.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color: #D8D95C;">Action</a>
                       </div>
                 </div>
               </div>
               <!-- Genre dropdown ends-->
             </li>
-            <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+            <div style="position: relative; display: inline-block; padding-top: 2px; padding-left: 280px;">
               <li>
-                <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
+                <button  type="button" class="btn btn-light" onclick="logout()" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Logout</button>
               </li>
             </div>
           </ul>
           <form id="searchForm" class="d-flex">
-            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-            <button class="btn btn-danger" type="submit">Search</button>
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search" >
+            <button class="btn btn-danger" type="submit" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Search</button>
           </form>
         </div>
       </div>
@@ -561,60 +570,46 @@ font-size:18px;
     <!-------------------------------Footer-------------------------------->
     <div id="waterdrop"></div>
     <footer class="footer">
-        <hr class="footer-hr">
+      <hr class="footer-hr">
         <div class="footer-content">
             <div class="footer-left">
-                <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-                <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+                <a href="home.html"><img class="footer-logo" src="Images/Logo/TheaterLogo.png" alt="" width="30" height="24"></a>
+                <p class="footer-bottom-tagline" style="color: bisque;">Discover, Stream, Repeat</p>
             </div>
             <div class="footer-middle">
-                <h2 class="footer-heading">Follow Us</h2>
+                <h2 class="footer-heading" style="color: bisque;">Follow Us</h2>
                 <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
-                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
-                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a>
-                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a>
-                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
+                    
+                    <a class="footer-links" href="https://twitter.com/vjti" target="_blank" style="color: bisque;"><i class="fab fa-twitter twitter" ></i></a>
+                    <a class="footer-links" href="https://in.linkedin.com/school/veermata-jijabai-technological-institute/" target="_blank" style="color: bisque;"><i class="fab fa-linkedin linkedin" ></i></a>
+                    <a class="footer-links" href="https://instagram.com/vjtistudentactivities?igshid=MzRlODBiNWFlZA==" target="_blank" style="color: bisque;"><i class="fab fa-instagram instagram" ></i></a>
+                    <a class="footer-links" href="https://github.com/Aditya-y9/MovieStreamingWebsite.git" target="_blank" style="color: bisque;"><i class="fab fa-github github" ></i></a>
                 </ul>
             </div>
             <div class="footer-middle">
-                <h2 class="footer-heading">Services</h2>
+                <h2 class="footer-heading" style="color: bisque; text-align: center;" >Services</h2>
                 <ul class="footer-middle-list">
-                    <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
-                    <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
-                    <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-                    <li class="footer-middle-list-item"><a href="news.html">Coming soon</a> </li>
-                    <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
-                    <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
+                    <li class="footer-middle-list-item"><a href="home.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="web-series.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Watch Web-Series</a> </li>
+                    <li class="footer-middle-list-item"><a href="kids.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Everything for Kids</a> </li>
                 </ul>
             </div>
-            <div class="footer-middle">
-                <h2 class="footer-heading">Try Our App</h2>
-                <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
-                </ul>
-            </div>
+            
             <div class="footer-right">
                 <p class="footer-links">
-                    <h2 class="footer-heading">Contact Us</h2>
-                    <p class="footer-bottom-tagline">Feel free to contact us.</p>
-                    <a class="footer-contact-button" href="contactus.html">Contact</a>
+                    <h2 class="footer-heading" style="color: bisque;">Contact Us</h2>
+                    <br>
+                    <a class="footer-contact-button" href="contactus.html" style="text-decoration: none;">Contact</a>
                 </p>
             </div>
         </div>
         <hr class="footer-hr">
-        <div class="footer-copyright">
-            <p>Copyright &copy; and &reg; Since
-                <script>
-                    document.write(new Date().getFullYear())
-                </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
-        </div>
+        
     </footer>
 
-    <!----------------------scroll back to top button-->
+    <!-----------------scroll back to top button-->
     <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
       </button>
       <script>
       $(document).ready(function(){
@@ -634,11 +629,6 @@ font-size:18px;
       });
       });
       </script>
-<script>
-  function logout(){
-    window.location.replace("login.html");
-  }
-  </script>
     <!-- offcanva JS and footer js -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
