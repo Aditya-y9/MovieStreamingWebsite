@@ -5,7 +5,7 @@
   <title>Contact Us</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./Images/Logo/TheaterLogo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="Images/Logo/TheaterLogo.png" type="image/x-icon">
 
   <!-- Font  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,7 @@
   margin-bottom: 10px;
   /* background-color: aquamarine; */
   border-bottom: 3px;
-  border-color: #5b8fb9;
+  border-color: #D8D95C;
   border-bottom-style: solid;
 }
     .menu li a:hover {
@@ -105,13 +105,13 @@
 
     }
     #header-nav .nav-link {
-  color: #b6eada;
+  color: #D8D95C;
   font-size: 20px;
   margin-left: 20px;
 }
     @media only screen and (max-width: 1400px){
   #header-nav .nav-link {
-    color: #b6eada;
+    color: #D8D95C;
     font-size: 18px;
     margin-left: 18px;
   }
@@ -163,86 +163,197 @@
 
 <body>
 
+<div class="box">
 
   <div class="scroll-bar">
+    
     <!-- navbar starts -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="header-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/Logo/TheaterLogo.png" alt="" width="15"
-            height="12"></a>
-        <button id="nav" class="navbar-toggler" id="nav" style="background: color lime;" type="button" data-bs-toggle="collapse"
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/Logo/TheaterLogo.png" alt="" width="30"
+            height="24"></a>
+        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#D8D95C" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" style="background-color: gradient;"></span>
+          <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
         </button>
         
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item ">
-              <a class="nav-link active s" aria-current="page" href="home.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Home</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html" style="text-decoration: none;">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="movies.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'">Movies</a>
+              <a class="nav-link" href="movies.html" style="text-decoration: none;">Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="web-series.html" onMouseOver="this.style.color='red'" onMouseOut="this.style.color='white'" >Web Series</a>
+              <a class="nav-link" href="web-series.html" style="text-decoration: none;">Web Series</a>
             </li>
-            
             <li class="nav-item">
-              <a class="nav-link" href="contactus.html" this.style.color = 'red'>About Us</a>
+              <a class="nav-link" href="contactus.html" style="text-decoration: none;">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html" style="text-decoration: none;">FAQs</a>
             </li>
             <li>
-            
+              <!-- Genre dropdown starts-->
               <div>
-                <div class="dropdown" style="position: relative; disPlay: inline-block; padding-top: 5px; padding-left: 15px;">
-                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 2px; padding-left: 20px; ">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">
                         Genres
                     </button>
-                    <div class="dropdown-content" style="color: white;">
-                        <a href="popular.html">Popular</a>
-                        <a href="crime.html">Crime</a>
-                        <a href="suspense.html">Suspense & Thriller</a>
-                        <a href="action.html">Action</a>
+                    <div class="dropdown-content" style="color: #D8D95C;">
+                        <a href="popular.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight:550px; color: #D8D95C;">Popular</a>
+                        <a href="crime.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color:#D8D95C;">Crime</a>
+                        <a href="suspense.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font: weight 525px;; color: #D8D95C;">Suspense & Thriller</a>
+                        <a href="action.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color: #D8D95C;">Action</a>
                       </div>
                 </div>
               </div>
               <!-- Genre dropdown ends-->
             </li>
-            <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
+            <div style="position: relative; display: inline-block; padding-top: 2px; padding-left: 280px;">
               <li>
-                <button  type="button" class="btn btn-light" onclick="logout()"  onMouseOver="this.style.color='yellow'" onMouseOut="this.style.color='white'">Logout</button>
+                <button  type="button" class="btn btn-light" onclick="logout()" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Logout</button>
               </li>
-            
-              <form id="searchForm" class="d-flex">
-                <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
             </div>
           </ul>
+          <form id="searchForm" class="d-flex">
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search" >
+            <button class="btn btn-danger" type="submit" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Search</button>
+          </form>
         </div>
       </div>
       </nav>
 
+        <!-- navbar ends -->
+      <div class="container">
+        <div id="movies" class="row"></div>
+      </div>
+      <hr>
+  
+  
+      <div class="box">
+  
+        <div class="text">
+          <h1 text-align ="center" style="color: bisque;">Contact Us</h1>
+          <div class="redline"></div>
+          <p style="color: bisque;">Have Questions ? We have answers ( may be )</p>
+        </div>
+      </div>
+  
+      <div class="touch">
+        <h2 style="color: bisque;">Get in touch</h2>
+        <div class="redline"></div>
+      </div>
+      <div class="container fill">
+        <div class="forthis">
+          <form action="https://formcarry.com/s/S1peCWurw0C" method="POST" name="contact-form" id="contact-form" onsubmit="return validateForm();">
+            <div class="form-row two2">
+              <div class="form-group col-md-6 column">
+                <input type="text" class="form-control input" id="firstname" name="firstname" placeholder=" " >
+                <label for="firstname" class="">First Name</label>
+                <div class="underline">
+                </div>
+              </div>
+              <div class="form-group col-md-6 column">
+                <input type="text" class="form-control input" id="lastname" name="lastname" placeholder=" " >
+                <label for="lastname" class="">Last Name</label>
+                <div class="underline"></div>
+              </div>
+            </div>
+            <div class="form-row one1">
+              <div class="form-group col-lg-6 column">
+                <input type="text" class="form-control input" id="email" name="email" placeholder=" " >
+                <label for="email" class="">Email</label>
+                <div class="underline"></div>
+              </div>
+              <div class="form-group col-lg-6 column">
+                <input type="text" class="form-control input" id="phone" name="phone"  placeholder=" ">
+                <label for="number" class="">Phone Number</label>
+                <div class="underline"></div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group column">
+                <input type="text" class="form-control input" name="subject" id="subject" placeholder=" " >
+                <label for="subject" class="">Subject</label>
+                <div class="underline extra"></div>
+              </div>
+            </div>
+            <div class="form-row size">
+              <div class="form-group column">
+                <textarea type="text" class="form-control input" name="message" id="message" rows="5"  placeholder=" "></textarea>
+                <label for="message" class="">Message</label>
+                <div class="underline extra gap"></div>
+              </div>
+            </div>
+            <div class="btn-sm">
+              <input type="submit" value="SEND MESSAGE" class="sm-button" id="submit-btn"> 
+              <a href="#" onclick="clearFunc()">Reset</a>
+            </div>
+          </form>
+        </div>
+      </div>
     <div class="container address">
       <div class="row add-row">
         <div class="col-sm-6">
-          <h3>Our Address</h3>
+          <h3 style="color: bisque;">Our Address</h3>
           <div class="redline-address"></div>
           <p>HR Mahajani Road</p>
           <p>VJTI , Matunga, Mumbai</p>
           <p>Maharashtra</p>
           <p>India - 400014</p>
-          
-       
+        </div>
+    </div>    
+    
+    <div id="waterdrop"></div>
+    <footer class="footer">
+      <hr class="footer-hr">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="home.html"><img class="footer-logo" src="Images/Logo/TheaterLogo.png" alt="" width="30" height="24"></a>
+                <p class="footer-bottom-tagline" style="color: bisque;">Discover, Stream, Repeat</p>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading" style="color: bisque;">Follow Us</h2>
+                <ul class="footer-middle-list icons">
+                    
+                    <a class="footer-links" href="https://twitter.com/vjti" target="_blank" style="color: bisque;"><i class="fab fa-twitter twitter" ></i></a>
+                    <a class="footer-links" href="https://in.linkedin.com/school/veermata-jijabai-technological-institute/" target="_blank" style="color: bisque;"><i class="fab fa-linkedin linkedin" ></i></a>
+                    <a class="footer-links" href="https://instagram.com/vjtistudentactivities?igshid=MzRlODBiNWFlZA==" target="_blank" style="color: bisque;"><i class="fab fa-instagram instagram" ></i></a>
+                    <a class="footer-links" href="https://github.com/Aditya-y9/MovieStreamingWebsite.git" target="_blank" style="color: bisque;"><i class="fab fa-github github" ></i></a>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <h2 class="footer-heading" style="color: bisque; text-align: center;" >Services</h2>
+                <ul class="footer-middle-list">
+                    <li class="footer-middle-list-item"><a href="home.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="web-series.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Watch Web-Series</a> </li>
+                    <li class="footer-middle-list-item"><a href="kids.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Everything for Kids</a> </li>
+                </ul>
+            </div>
+            
+            <div class="footer-right">
+                <p class="footer-links">
+                    <h2 class="footer-heading" style="color: bisque;">Contact Us</h2>
+                    <br>
+                    <a class="footer-contact-button" href="contactus.html" style="text-decoration: none;">Contact</a>
+                </p>
+            </div>
+        </div>
+        <hr class="footer-hr">
+        
+    </footer>
 
-
+    
     <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
 
     <div class="bottom-gap"></div>
-
+  </div>
 </body>
 
 </html>

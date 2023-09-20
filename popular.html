@@ -5,7 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>ApnaTheatre.com</title>
+    <title>Streamify</title>
+    <link rel="shortcut icon" href="Images/Logo/TheaterLogo.png" type="image/x-icon">
 
     <!-- Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +49,7 @@ padding: 6px;
 border-radius: 50%;
 }
 #scrollToTopButton:hover, i:hover {
-background-color:white;
+background-color:bisque;
 color:#36454f;
 }
 #header-nav .nav-link {
@@ -114,77 +115,79 @@ color:#36454f;
   /* background-color: aquamarine; */
   border-bottom: 3px;
   border-color: #d8d95c;
-  border-bottom-style: solid;
+  border-bottom-style:inset;
 }
+
+
 </style>
 
 <body>
-    <div class="scroll-bar">
+  
+  <div class="scroll-bar">
+    
+    <!-- navbar starts -->
 
-      <!-- navbar starts -->
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
-              height="24"></a>
-          <button id="nav" class="navbar-toggler" id="nav" style="background-color:#36454f" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="movies.html">Movies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="web-series.html">Web Series</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="kids.html">Kids</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="tv.html">TV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="premium.html">Premium</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactus.html">Contact Us</a>
-              </li>
-              <li>
-                <!-- Genre dropdown starts-->
-                <div>
-                  <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
-                      <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
-                          Genres
-                      </button>
-                      <div class="dropdown-content" style="color: #36454f;">
-                          <a href="popular.html">Popular</a>
-                          <a href="crime.html">Crime</a>
-                          <a href="suspense.html">Suspense & Thriller</a>
-                          <a href="action.html">Action</a>
-                        </div>
-                  </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/Logo/TheaterLogo.png" alt="" width="30"
+            height="24"></a>
+        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#D8D95C" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html" style="text-decoration: none;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="movies.html" style="text-decoration: none;">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="web-series.html" style="text-decoration: none;">Web Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html" style="text-decoration: none;">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html" style="text-decoration: none;">FAQs</a>
+            </li>
+            <li>
+              <!-- Genre dropdown starts-->
+              <div>
+                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 2px; padding-left: 20px; ">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">
+                        Genres
+                    </button>
+                    <div class="dropdown-content" style="color: #D8D95C;">
+                        <a href="popular.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight:550px; color: #D8D95C;">Popular</a>
+                        <a href="crime.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color:#D8D95C;">Crime</a>
+                        <a href="suspense.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font: weight 525px;; color: #D8D95C;">Suspense & Thriller</a>
+                        <a href="action.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color: #D8D95C;">Action</a>
+                      </div>
                 </div>
-                <!-- Genre dropdown ends-->
-              </li>
-              <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
-                <li>
-                  <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
-                </li>
               </div>
-            </ul>
-            <form id="searchForm" class="d-flex">
-              <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-              <button class="btn btn-danger" type="submit">Search</button>
-            </form>
-          </div>
+              <!-- Genre dropdown ends-->
+            </li>
+            <div style="position: relative; display: inline-block; padding-top: 2px; padding-left: 280px;">
+              <li>
+                <button  type="button" class="btn btn-light" onclick="logout()" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Logout</button>
+              </li>
+            </div>
+          </ul>
+          <form id="searchForm" class="d-flex">
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search" >
+            <button class="btn btn-danger" type="submit" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Search</button>
+          </form>
         </div>
-        </nav>
+      </div>
+      </nav>
+
+        <!-- navbar ends -->
+
+
+  
   
           <!-- navbar ends -->
 
@@ -193,7 +196,7 @@ color:#36454f;
                 <div id="movies" class="row"></div>
             </div>
             <hr>
-            <h2>Popular</h2>
+            <h2 style="color:#D8D95C;">Popular</h2>
             <hr>
             <div class="container" id="Movies">
               <div class="poster">
@@ -209,7 +212,7 @@ color:#36454f;
                         <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">9.5</button>
                       </span>
                       <br />
-                      <br />
+                     
                     </p>
 
                       <p class="para_i">Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the meth-making business to repay his medical debts. 
@@ -224,11 +227,7 @@ color:#36454f;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Breaking Bad</b>
-                          <br>
-                          IMDb - 9.5
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -246,7 +245,7 @@ color:#36454f;
                         <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.4</button>
                       </span>
                       <br />
-                      <br />
+                    
                     </p>
 
                       <p class="para_i">Akhandanand Tripathi made millions exporting carpets and became the mafia boss of Mirzapur. 
@@ -262,11 +261,7 @@ color:#36454f;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Mirzapur</b>
-                          <br>
-                          IMDb - 8.4
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -285,7 +280,7 @@ color:#36454f;
                         <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.3</button>
                       </span>
                       <br />
-                      <br />
+                  
                     </p>
 
                       <p class="para_i">A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist in recorded history -- 
@@ -301,11 +296,7 @@ color:#36454f;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Money Heist</b>
-                          <br>
-                          IMDb - 8.3
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -323,7 +314,7 @@ color:#36454f;
                         <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8</button>
                       </span>
                       <br />
-                      <br />
+                    
                     </p>
 
                       <p class="para_i">Living idealized suburban lives, super-powered beings Wanda and Vision begin to suspect that everything is not as it seems.</p>
@@ -337,11 +328,7 @@ color:#36454f;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Wanda Vision</b>
-                          <br>
-                          IMDb - 8
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -360,7 +347,7 @@ color:#36454f;
                         <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">9.1</button>
                       </span>
                       <br />
-                      <br />
+                      
                     </p>
 
                       <p class="para_i">TVF Pitchers is a web series created by The Viral Fever and developed by Arunabh Kumar.</p>
@@ -375,11 +362,7 @@ color:#36454f;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Pitchers</b>
-                          <br>
-                          IMDb - 9.1
-                      </div>
+                     
                   </div>
                 </div>
               </div>
@@ -398,7 +381,7 @@ color:#36454f;
                         <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.1</button>
                       </span>
                       <br />
-                      <br />
+                      
                     </p>
 
                       <p class="para_i">Based on characters created by Neil Gaiman, Sam Kieth and Mike Dringenberg, 
@@ -414,11 +397,7 @@ color:#36454f;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Lucifier</b>
-                          <br>
-                          IMDb - 8.1
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -437,7 +416,7 @@ color:#36454f;
                         <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">9.7</button>
                       </span>
                       <br />
-                      <br />
+                     
                     </p>
 
                       <p class="para_i">Aspirants is a 2021 Indian Hindi-language coming-of-age web series produced by The Viral Fever and created by Arunabh Kumar and Shreyansh Pandey, 
@@ -456,11 +435,7 @@ color:#36454f;
                             }
                           </script>
                     </div>
-                      <div class="flim">
-                          <b>Aspirants</b>
-                          <br>
-                          IMDb - 9.7
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -478,7 +453,7 @@ color:#36454f;
                         <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">9.1</button>
                       </span>
                       <br />
-                      <br />
+                      
                     </p>
 
                       <p class="para_i">Dr Watson, a former army doctor, finds himself sharing a flat with Sherlock Holmes, an eccentric individual with a knack for solving crimes. 
@@ -494,11 +469,7 @@ color:#36454f;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Sherlock</b>
-                          <br>
-                          IMDb - 9.1
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -518,7 +489,7 @@ color:#36454f;
                         <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">9.5</button>
                       </span>
                       <br />
-                      <br />
+                     
                     </p>
 
                       <p class="para_i">Harshad Mehta took the stock market to dizzying heights and had a catastrophic downfall.</p>
@@ -534,11 +505,7 @@ color:#36454f;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Scam 1992 : The Harshad Mehta Story</b>
-                          <br>
-                          IMDb - 9.5
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -556,55 +523,41 @@ color:#36454f;
       <hr class="footer-hr">
         <div class="footer-content">
             <div class="footer-left">
-                <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-                <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+                <a href="home.html"><img class="footer-logo" src="Images/Logo/TheaterLogo.png" alt="" width="30" height="24"></a>
+                <p class="footer-bottom-tagline" style="color: bisque;">Discover, Stream, Repeat</p>
             </div>
             <div class="footer-middle">
-                <h2 class="footer-heading">Follow Us</h2>
+                <h2 class="footer-heading" style="color: bisque;">Follow Us</h2>
                 <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:#d8d95c"></i></a>
-                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:#d8d95c"></i></a>
-                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:#d8d95c"></i></a>
-                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:#d8d95c"></i></a>
-                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:#d8d95c"></i></a>
+                    
+                    <a class="footer-links" href="https://twitter.com/vjti" target="_blank" style="color: bisque;"><i class="fab fa-twitter twitter" ></i></a>
+                    <a class="footer-links" href="https://in.linkedin.com/school/veermata-jijabai-technological-institute/" target="_blank" style="color: bisque;"><i class="fab fa-linkedin linkedin" ></i></a>
+                    <a class="footer-links" href="https://instagram.com/vjtistudentactivities?igshid=MzRlODBiNWFlZA==" target="_blank" style="color: bisque;"><i class="fab fa-instagram instagram" ></i></a>
+                    <a class="footer-links" href="https://github.com/Aditya-y9/MovieStreamingWebsite.git" target="_blank" style="color: bisque;"><i class="fab fa-github github" ></i></a>
                 </ul>
             </div>
             <div class="footer-middle">
-                <h2 class="footer-heading">Services</h2>
+                <h2 class="footer-heading" style="color: bisque; text-align: center;" >Services</h2>
                 <ul class="footer-middle-list">
-                    <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
-                    <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
-                    <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-                    <li class="footer-middle-list-item"><a href="news.html">Coming soon</a> </li>
-                    <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
-                    <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
+                    <li class="footer-middle-list-item"><a href="home.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="web-series.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Watch Web-Series</a> </li>
+                    <li class="footer-middle-list-item"><a href="kids.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Everything for Kids</a> </li>
                 </ul>
             </div>
-            <div class="footer-middle">
-                <h2 class="footer-heading">Try Our App</h2>
-                <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:#d8d95c"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:#d8d95c"></i></a>
-                </ul>
-            </div>
+            
             <div class="footer-right">
                 <p class="footer-links">
-                    <h2 class="footer-heading">Contact Us</h2>
-                    <p class="footer-bottom-tagline">Feel free to contact us.</p>
-                    <a class="footer-contact-button" href="contactus.html">Contact</a>
+                    <h2 class="footer-heading" style="color: bisque;">Contact Us</h2>
+                    <br>
+                    <a class="footer-contact-button" href="contactus.html" style="text-decoration: none;">Contact</a>
                 </p>
             </div>
         </div>
         <hr class="footer-hr">
-        <div class="footer-copyright">
-            <p>Copyright &copy; and &reg; Since
-                <script>
-                    document.write(new Date().getFullYear())
-                </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
-        </div>
+        
     </footer>
 
-    <!----------------------scroll back to top button-->
+    <!-----------------scroll back to top button-->
     <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
         <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
       </button>
@@ -626,11 +579,6 @@ color:#36454f;
       });
       });
       </script>
-      <script>
-        function logout(){
-          window.location.replace("login.html");
-        }
-        </script>
 
     <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

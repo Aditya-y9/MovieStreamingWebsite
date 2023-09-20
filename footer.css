@@ -14,7 +14,7 @@
  }
 
  .footer-distributed .footer-left p {
-   color: #8f9296;
+   color: #d8d95c;
    font-size: 14px;
    margin: 0;
  }
@@ -24,7 +24,7 @@
  .footer-distributed p.footer-links {
    font-size: 18px;
    font-weight: bold;
-   color: #ffffff;
+   color: #d8d95c;
    margin: 0 0 10px;
    padding: 0;
    transition: ease .25s;
@@ -43,7 +43,7 @@
    content: "·";
    font-size: 20px;
    left: 0;
-   color: #fff;
+   color: #d8d95c;
    display: inline-block;
    padding-right: 5px;
  }
@@ -62,7 +62,7 @@
    display: inline-block;
    width: 35px;
    height: 35px;
-   background-color: #647681;
+   background-color: #d8d95c;
    border-radius: 2px;
    font-size: 20px;
    color: #d8d95c;
@@ -128,8 +128,8 @@
   
   
       .logo {
-    width: 110px;
-    height: 90px;
+    width: 200px;
+    height: 150px;
     padding: 3px;
     margin: 0;
     padding: 0;
@@ -161,6 +161,7 @@
   }
   .footer-heading{
     color:#d8d95c;
+    text-align: center;
   }
   .footer-left, .footer-right, .footer-middle{
   text-align:center;
@@ -176,7 +177,7 @@
   margin-top:30px;
   }
   .footer-middle a i:hover{
-  background-color:#d8d95c;
+  background: color #d8d95c;
   border-radius:50px;
   color:#d8d95c;
   }
@@ -200,14 +201,14 @@
   .footer-contact-button{
   font-size:20px;
   background-color:#d8d95c;
-  color:black;
+  color:#1d2731;
   padding:10px;
   border:none;
   border-radius:10px;
   text-decoration:none;
   }
   .footer-contact-button:hover{
-  background-color:white;
+  background-color:#d8d95c;
   color:#d8d95c;
   }
   .footer-bottom-tagline{
@@ -220,7 +221,7 @@
   
   .footer-copyright{
   text-align:center;
-  color:white;
+  color:#d8d95c;
   margin-top:20px;
   font-size:18px;
   }

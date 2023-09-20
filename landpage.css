@@ -5,7 +5,7 @@
     font-family: 'Ubuntu', sans-serif;
   }
   .nav-link.b:hover{
-    color: #7bdf1d;
+    color: #d8d95c;
   }
   .bottom-text-container1{
     cursor: pointer;
@@ -54,7 +54,7 @@
     font-size: 3rem;
   }
   span {
-    color: #f80;
+    color: #d8d95c;
   }
   .text-container p {
     color: #fff;
@@ -112,18 +112,18 @@
   .text-container .button {
     color: #fff;
     text-decoration: none;
-    background-color: #f80;
+    background-color: #d8d95c;
     }
   .text-container .button:hover {
     color: #fff;
     text-decoration: none;
-    background-color: #f80;
+    background-color: #d8d95c;
     transition:  all 500ms;
   }
   .button {
     color: #fff;
     text-decoration: none;
-    background-color: #f80;
+    background-color: #d8d95c;
     box-shadow: 0 5px #b80;
     display: inline-block;
     opacity: 0.9;
@@ -154,12 +154,12 @@
     text-align: center;
   }
   .bottom-text-container .watch , .bottom-text-container .repeat{
-    background-color: #f80;
+    background-color: #d8d95c;
     border: none;
   }
   .bottom-text-container .chill {
-    border:1px solid #f80;
-    color:#f80;
+    border:1px solid #d8d95c;
+    color:#d8d95c;
   }
   .bottom-text-container1 {
     display: flex;

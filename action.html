@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>ApnaTheatre.com</title>
-    <link rel="shortcut icon" href="./Images/Logo/Title.jpeg" type="image/x-icon">
+    <title>Streamify</title>
+    <link rel="shortcut icon" href="Images/Logo/TheaterLogo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -36,8 +36,8 @@ font-size: 25px;
 z-index: 99;
 width: 50px;
 height: 50px;
-background-color:red;
-color:black;
+background-color:#d8d95c;
+color:#6e6e6e;
 border: none;
 cursor: pointer;
 outline: none;
@@ -45,44 +45,89 @@ padding: 6px;
 border-radius: 50%;
 }
 #scrollToTopButton:hover, i:hover {
-background-color:white;
-color:red;
+background-color:bisque;
+color:#36454f;
 }
-#nav:hover
-{
-  background-color:#e60e23!important;
+#header-nav .nav-link {
+  color: #d8d95c;
+  font-size: 20px;
+  margin-left: 20px;
+}
+    @media only screen and (max-width: 1400px){
+  #header-nav .nav-link {
+    color: #d8d95c;
+    font-size: 18px;
+    margin-left: 18px;
+  }
+  #searchText{
+    width: 150px;
+  }
+}
 
+@media only screen and (min-width: 1133px) and (max-width: 1275px) {
+  #header-nav .nav-link {
+    color: #d8d95c;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+}
+@media only screen and (min-width: 1035px) and (max-width: 1132px) {
+  #header-nav .nav-link {
+    color: #d8d95c;
+    font-size: 15px;
+    margin-left: 10px;
+  } 
+  #searchText{
+    width: 120px;
+  }
+  #submitBtn{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1034px) {
+  #header-nav .nav-link {
+    color: #d8d95c;
+    font-size: 14px;
+    margin-left: 10px;
+  } 
+
+#searchText{
+  width: 100px;
+}
+#submitBtn{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
 }
 
 .container {
   text-align: center;
 }
-
-.navbar-nav{
-  display: flex;
-  align-items: center;
-  padding: 0px 7.5px;
-}
 .nav-item :hover{
   margin-bottom: 10px;
   /* background-color: aquamarine; */
   border-bottom: 3px;
-  border-color: red;
-  border-bottom-style: solid;
+  border-color: #d8d95c;
+  border-bottom-style:inset;
 }
+
+
 </style>
 
-
 <body>
-    <div class="scroll-bar">
+  
+  <div class="scroll-bar">
+    
+    <!-- navbar starts -->
 
-        <!-- navbar starts -->
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/TheaterLogoFinal.png" alt="" width="30"
+        <a class="navbar-brand" href="home.html"><img class="logo" src="Images/Logo/TheaterLogo.png" alt="" width="30"
             height="24"></a>
-        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#8b0000" type="button" data-bs-toggle="collapse"
+        <button id="nav" class="navbar-toggler" id="nav" style="background-color:#D8D95C" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="background-color:dark-grey;"></span>
         </button>
@@ -90,61 +135,46 @@ color:red;
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="home.html" style="text-decoration: none;">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="movies.html">Movies</a>
+              <a class="nav-link" href="movies.html" style="text-decoration: none;">Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="web-series.html">Web Series</a>
+              <a class="nav-link" href="web-series.html" style="text-decoration: none;">Web Series</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="kids.html">Kids</a>
+              <a class="nav-link" href="contactus.html" style="text-decoration: none;">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tv.html">TV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="premium.html">Premium</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
+              <a class="nav-link" href="faq.html" style="text-decoration: none;">FAQs</a>
             </li>
             <li>
               <!-- Genre dropdown starts-->
               <div>
-                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
-                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:20px;">
+                <div class="dropdown" style="position: relative; display: inline-block; padding-top: 2px; padding-left: 20px; ">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" id="dropdownMenuButton" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">
                         Genres
                     </button>
-                    <div class="dropdown-content" style="color: white;">
-                        <a href="popular.html">Popular</a>
-                        <a href="crime.html">Crime</a>
-                        <a href="suspense.html">Suspense & Thriller</a>
-                        <a href="action.html">Action</a>
-                        <a href="fantasy.html">Sci-Fi & Fantasy</a>
-                        <a href="documentary.html">Documentary</a>
-                        <a href="horror.html">Horror</a>
-                        <a href="drama.html">Drama</a>
-                        <a href="war.html">War & Politics</a>
-                        <a href="comedy.html">Comedy</a>
-                        <a href="romance.html">Romance</a>
-                        <a href="anime.html">Anime</a>
+                    <div class="dropdown-content" style="color: #D8D95C;">
+                        <a href="popular.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight:550px; color: #D8D95C;">Popular</a>
+                        <a href="crime.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color:#D8D95C;">Crime</a>
+                        <a href="suspense.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font: weight 525px;; color: #D8D95C;">Suspense & Thriller</a>
+                        <a href="action.html" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#D8D95C'" style="font-weight: 550px; color: #D8D95C;">Action</a>
                       </div>
                 </div>
               </div>
               <!-- Genre dropdown ends-->
             </li>
-            <div style="position: relative; display: inline-block; padding-top: 5px; padding-left: 15px;">
-            <li>
-              <button  type="button" class="btn btn-light" onclick="logout()">Logout</button>
-            </li>
-          </div>
+            <div style="position: relative; display: inline-block; padding-top: 2px; padding-left: 280px;">
+              <li>
+                <button  type="button" class="btn btn-light" onclick="logout()" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Logout</button>
+              </li>
+            </div>
           </ul>
           <form id="searchForm" class="d-flex">
-            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search">
-            <button class="btn btn-danger" type="submit">Search</button>
+            <input class="form-control me-2" type="text" id="searchText" placeholder="Search" aria-label="Search" >
+            <button class="btn btn-danger" type="submit" style="font-size:15px; color: #36454f; background-color: #D8D95C; font-weight: bold;">Search</button>
           </form>
         </div>
       </div>
@@ -157,7 +187,7 @@ color:red;
                 <div id="movies" class="row"></div>
             </div>
             <hr>
-            <h2>Action</h2>
+            <h2 style="color:#D8D95C;">Action</h2>
             <hr>
             <div class="container" id="Movies">
               <div class="poster">
@@ -167,13 +197,13 @@ color:red;
                         <img src="./Images/got.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1 style="font-size: 35px;">Game of Thrones</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2011</button>
-                        <button class="btn_i b2_i"  title="Seasons" style="color:white">8</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">9.2</button>
+                      <h1 style="font-size: 35px; color:#36454f; font-weight: bold;">Game of Thrones</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:#36454f">2011</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:#36454f">8</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">9.2</button>
                       </span>
                       <br />
-                      <br />
+                
                     </p>
 
                       <p class="para_i">Nine noble families wage war against each other in order to gain control over the mythical land of Westeros.
@@ -189,11 +219,7 @@ color:red;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Game of Thrones</b>
-                          <br>
-                          IMDb - 9.2
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -204,13 +230,13 @@ color:red;
                         <img src="./Images/zinda.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Zindabaad</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                        <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">7.4</button>
+                      <h1 style="color:#36454f; font-weight: bold;">Zindabaad</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:#36454f">2018</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:#36454f">1</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">7.4</button>
                       </span>
                       <br />
-                      <br />
+                      
                     </p>
 
                       <p class="para_i">Zindabaad is a political - action thriller, jointly produced by Vikram Bhatt's VB on the web and Jio cinema</p>
@@ -226,11 +252,7 @@ color:red;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Zindabaad</b>
-                          <br>
-                          IMDb - 7.4
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -242,13 +264,13 @@ color:red;
                         <img src="./Images/vikings.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Vikings</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2013</button>
-                        <button class="btn_i b2_i"  title="Seasons" style="color:white">5</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.5</button>
+                      <h1 style="color:#36454f; font-weight: bold;">Vikings</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:#36454f">2013</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:#36454f">5</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.5</button>
                       </span>
                       <br />
-                      <br />
+                      
                     </p>
 
                       <p class="para_i">Ragnar Lothbrok, a legendary Norse hero, is a mere farmer who rises up to become a fearless warrior and commander of the Viking tribes with the support of his equally ferocious family.</p>
@@ -264,11 +286,7 @@ color:red;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Vikings</b>
-                          <br>
-                          IMDb - 8.5
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -280,13 +298,13 @@ color:red;
                         <img src="./Images/gangs of wassepur.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Gangs of Wasseypur</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
-                        <button class="btn_i b2_i"  title="Minutes" style="color:white">2h40m</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.2</button>
+                      <h1 style="color:#36454f; font-weight: bold;">Gangs of Wasseypur</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:#36454f">2012</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">2h40m</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.2</button>
                       </span>
                       <br />
-                      <br />
+                      
                     </p>
 
                       <p class="para_i">Gangs of Wasseypur is a 2012 Indian two-part crime film produced and directed by Anurag Kashyap, and written by Kashyap and Zeishan Quadri.</p>
@@ -301,11 +319,7 @@ color:red;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Gangs of Wasseypur</b>
-                          <br>
-                          IMDb - 8.2
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -317,13 +331,13 @@ color:red;
                         <img src="./Images/arrow.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Arrow</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
-                        <button class="btn_i b2_i"  title="Seasons" style="color:white">8</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">7.5</button>
+                      <h1 style="color:#36454f; font-weight: bold;">Arrow</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:#36454f">2012</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:#36454f">8</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">7.5</button>
                       </span>
                       <br />
-                      <br />
+              
                     </p>
 
                       <p class="para_i">After mastering the skill of archery on a deserted island, multi-millionaire playboy Oliver Queen returns to his city to take on the vigilante persona of Arrow to fight crime and corruption.</p>
@@ -339,11 +353,7 @@ color:red;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Arrow</b>
-                          <br>
-                          IMDb - 7.5
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -356,13 +366,13 @@ color:red;
                         <img src="./Images/apharan.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Apharan</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                        <button class="btn_i b2_i"  title="Seasons" style="color:white">1</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
+                      <h1 style="color:#36454f; font-weight: bold;">Apharan</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:#36454f">2018</button>
+                        <button class="btn_i b2_i"  title="Seasons" style="color:#36454f">1</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.3</button>
                       </span>
                       <br />
-                      <br />
+                     
                     </p>
 
                       <p class="para_i">Rudra, a senior inspector, is lured into kidnapping a young girl at the behest of her mother</p>
@@ -378,11 +388,7 @@ color:red;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Apharan</b>
-                          <br>
-                          IMDb - 8.3
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -395,13 +401,13 @@ color:red;
                         <img src="./Images/war.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>War</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                        <button class="btn_i b2_i"  title="Minutes" style="color:white">2h34m</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">6.5</button>
+                      <h1 style="color:#36454f; font-weight: bold;">War</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:#36454f">2019</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">2h34m</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">6.5</button>
                       </span>
                       <br />
-                      <br />
+                     
                     </p>
 
                       <p class="para_i">Kabir, a secret agent, goes rogue after a mission to catch a terrorist goes awry. However, his boss sends Khalid, another agent and his student, to track him down.</p>
@@ -417,11 +423,7 @@ color:red;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>War</b>
-                          <br>
-                          IMDb - 6.5
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -433,13 +435,13 @@ color:red;
                         <img src="./Images/kgf.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>KGF</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                        <button class="btn_i b2_i"  title="Minutes" style="color:white">2h50m</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.3</button>
+                      <h1 style="color:#36454f; font-weight: bold;">KGF</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:#36454f">2018</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">2h50m</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.3</button>
                       </span>
                       <br />
-                      <br />
+                     
                     </p>
 
                       <p class="para_i">Rocky, a young man, seeks power and wealth in order to fulfil a promise to his dying mother. His quest takes him to Mumbai, where he gets involved with the notorious gold mafia.</p>
@@ -455,11 +457,7 @@ color:red;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>KGF</b>
-                          <br>
-                          IMDb - 8.3
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -472,13 +470,13 @@ color:red;
                         <img src="./Images/django.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Django Unchained</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2012</button>
-                        <button class="btn_i b2_i"  title="Minutes" style="color:white">2h45m</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                      <h1 style="color:#36454f; font-weight: bold;">Django Unchained</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:#36454f">2012</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">2h45m</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.4</button>
                       </span>
                       <br />
-                      <br />
+                   
                     </p>
 
                       <p class="para_i">When Django, a slave, is freed, he joins forces with a bounty hunter to rescue his wife, who has been enslaved by Calvin, a hard-hearted plantation owner.</p>
@@ -494,11 +492,7 @@ color:red;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Django Unchained</b>
-                          <br>
-                          IMDb -8.4
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -511,13 +505,13 @@ color:red;
                         <img src="./Images/endgame.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Avengers : Endgame</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2019</button>
-                        <button class="btn_i b2_i"  title="Minutes" style="color:white">3h2m</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                      <h1 style="color:#36454f; font-weight: bold;">Avengers : Endgame</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:#36454f">2019</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">3h2m</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.4</button>
                       </span>
                       <br />
-                      <br />
+                  
                     </p>
 
                       <p class="para_i">After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.</p>
@@ -532,11 +526,7 @@ color:red;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Avengers : Endgame</b>
-                          <br>
-                          IMDb - 8.4
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -549,13 +539,13 @@ color:red;
                         <img src="./Images/infinity.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Avengers : Infinity War</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">2018</button>
-                        <button class="btn_i b2_i"  title="Minutes" style="color:white">2h40m<button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.4</button>
+                      <h1 style="color:#36454f; font-weight: bold;">Avengers : Infinity War</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:#36454f">2018</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">2h40m<button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.4</button>
                       </span>
                       <br />
-                      <br />
+                      
                     </p>
 
                       <p class="para_i">The Avengers must stop Thanos, an intergalactic warlord, from getting his hands on all the infinity stones. However, Thanos is prepared to go to any lengths to carry out his insane plan.</p>
@@ -570,11 +560,7 @@ color:red;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Avengers : Infinity War</b>
-                          <br>
-                          IMDb - 8.4
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -586,13 +572,13 @@ color:red;
                         <img src="./Images/ter.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Terminator Series</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">1984</button>
-                        <button class="btn_i b2_i"  title="Minutes" style="color:white">1h48m</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.0</button>
+                      <h1 style="color:#36454f; font-weight: bold;">Terminator Series</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:#36454f">1984</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">1h48m</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.0</button>
                       </span>
                       <br />
-                      <br />
+                      
                     </p>
 
                       <p class="para_i">A cyborg assassin is sent back in time to kill Sarah, a waitress, in a bid to stop her son who will wage a long war against his enemy in the future unless the course of history is altered.</p>
@@ -607,11 +593,7 @@ color:red;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Terminator Series</b>
-                          <br>
-                          IMDb - 8.0
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -624,13 +606,13 @@ color:red;
                         <img src="./Images/star.jpg" alt="Avatar" style="width:250px;height:360px;">
                     </div>
                     <div class="flip-card-back_i">
-                      <h1>Star Wars Series</h1>
-                        <button class="btn_i b3_i"  title="Year" style="color:white">1977</button>
-                        <button class="btn_i b2_i"  title="Minutes" style="color:white">2h5m</button>
-                        <button class="btn_i b1_i"  title="IMDb" style="color:white">8.6</button>
+                      <h1 style="color:#36454f; font-weight: bold;">Star Wars Series</h1>
+                        <button class="btn_i b3_i"  title="Year" style="color:#36454f">1977</button>
+                        <button class="btn_i b2_i"  title="Minutes" style="color:#36454f">2h5m</button>
+                        <button class="btn_i b1_i"  title="IMDb" style="color:#36454f">8.6</button>
                       </span>
                       <br />
-                      <br />
+                      
                     </p>
 
                       <p class="para_i">After Princess Leia, the leader of the Rebel Alliance, is held hostage by Darth Vader, Luke and Han Solo must free her and destroy the powerful weapon created by the Galactic Empire.</p>
@@ -646,11 +628,7 @@ color:red;
                         <button class="btn_i b4_i">▶Play</button>
 
                     </div>
-                      <div class="flim">
-                          <b>Star Wars Series</b>
-                          <br>
-                          IMDb - 8.6
-                      </div>
+                      
                   </div>
                 </div>
               </div>
@@ -666,83 +644,62 @@ color:red;
       <hr class="footer-hr">
         <div class="footer-content">
             <div class="footer-left">
-                <a href="home.html"><img class="footer-logo" src="Images/TheaterLogoFinal.png" alt="" width="30" height="24"></a>
-                <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+                <a href="home.html"><img class="footer-logo" src="Images/Logo/TheaterLogo.png" alt="" width="30" height="24"></a>
+                <p class="footer-bottom-tagline" style="color: bisque;">Discover, Stream, Repeat</p>
             </div>
             <div class="footer-middle">
-                <h2 class="footer-heading">Follow Us</h2>
+                <h2 class="footer-heading" style="color: bisque;">Follow Us</h2>
                 <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f facebook" style="color:red"></i></a>
-                    <a class="footer-links" href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter twitter" style="color:red"></i></a>
-                    <a class="footer-links" href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin linkedin" style="color:red"></i></a>
-                    <a class="footer-links" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram" style="color:red"></i></a>
-                    <a class="footer-links" href="https://github.com/QAZIMAAZARSHAD/Movie-Streaming-Website" target="_blank"><i class="fab fa-github github" style="color:red"></i></a>
-                </ul>
-            </div>
-            <div class="footer-middle">
-                <h2 class="footer-heading">Services</h2>
-                <ul class="footer-middle-list">
-                    <li class="footer-middle-list-item"><a href="home.html">Enjoy Latest Movies</a> </li>
-                    <li class="footer-middle-list-item"><a href="web-series.html">Watch Web-Series</a> </li>
-                    <li class="footer-middle-list-item"><a href="kids.html">Everything for Kids</a> </li>
-                    <li class="footer-middle-list-item"><a href="news.html">Coming soon</a> </li>
-                    <li class="footer-middle-list-item"><a href="premium.html">Get Premium Subscription</a> </li>
-                    <li class="footer-middle-list-item"><a href="faq.html">FAQ</a> </li>
                     
+                    <a class="footer-links" href="https://twitter.com/vjti" target="_blank" style="color: bisque;"><i class="fab fa-twitter twitter" ></i></a>
+                    <a class="footer-links" href="https://in.linkedin.com/school/veermata-jijabai-technological-institute/" target="_blank" style="color: bisque;"><i class="fab fa-linkedin linkedin" ></i></a>
+                    <a class="footer-links" href="https://instagram.com/vjtistudentactivities?igshid=MzRlODBiNWFlZA==" target="_blank" style="color: bisque;"><i class="fab fa-instagram instagram" ></i></a>
+                    <a class="footer-links" href="https://github.com/Aditya-y9/MovieStreamingWebsite.git" target="_blank" style="color: bisque;"><i class="fab fa-github github" ></i></a>
                 </ul>
             </div>
             <div class="footer-middle">
-                <h2 class="footer-heading">Try Our App</h2>
-                <ul class="footer-middle-list icons">
-                    <a class="footer-links" href="#"><i class="fab fa-google-play" style="color:red"></i></a>
-                    <a class="footer-links" href="#"><i class="fab fa-app-store-ios" style="color:red"></i></a>
+                <h2 class="footer-heading" style="color: bisque; text-align: center;" >Services</h2>
+                <ul class="footer-middle-list">
+                    <li class="footer-middle-list-item"><a href="home.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Enjoy Latest Movies</a> </li>
+                    <li class="footer-middle-list-item"><a href="web-series.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Watch Web-Series</a> </li>
+                    <li class="footer-middle-list-item"><a href="kids.html" onMouseOver="this.style.color='#D8D95C'" onMouseOut="this.style.color='bisque'" style="font-weight:550px; color:bisque;">Everything for Kids</a> </li>
                 </ul>
             </div>
+            
             <div class="footer-right">
                 <p class="footer-links">
-                    <h2 class="footer-heading">Contact Us</h2>
-                    <p class="footer-bottom-tagline">Feel free to contact us.</p>
-                    <a class="footer-contact-button" href="contactus.html">Contact</a>
+                    <h2 class="footer-heading" style="color: bisque;">Contact Us</h2>
+                    <br>
+                    <a class="footer-contact-button" href="contactus.html" style="text-decoration: none;">Contact</a>
                 </p>
             </div>
         </div>
         <hr class="footer-hr">
-        <div class="footer-copyright">
-            <p>Copyright &copy; and &reg; Since
-                <script>
-                    document.write(new Date().getFullYear())
-                </script> Under ApnaTheatre.com : (Project Is Done By Qazi Maaz Arshad)</p>
-        </div>
+        
     </footer>
 
-    <!----------------------Scroll to top button--------------------------------------------->
+    <!-----------------scroll back to top button-->
     <button  id="scrollToTopButton" title="Go to top" class="ml-5" >
-      <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
-  </button>
-  <script>
-    $(document).ready(function(){
-      var scrollTopButton = document.getElementById("scrollToTopButton");
-      // window.onscroll = function () { scrollFunction() };
+        <i class="fa fa-angle-double-up" aria-hidden="true" ></i>
+      </button>
+      <script>
+      $(document).ready(function(){
+        var scrollTopButton = document.getElementById("scrollToTopButton");
+        window.onscroll = function () { scrollFunction() };
 
-    //   function scrollFunction() {
-    //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    //     scrollTopButton.style.display = "block";
-    //   } else {
-    //     scrollTopButton.style.display = "none";
-    //   }
-    // }
-
-    $("#scrollToTopButton").click(function(){
-    $('html ,body').animate({scrollTop : 0},800)
-  });
-  });
-  </script>
-    <script>
-      function logout(){
-        window.location.replace("login.html");
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
+        }
       }
-    </script>
 
+      $("#scrollToTopButton").click(function(){
+      $('html ,body').animate({scrollTop : 0},800)
+      });
+      });
+      </script>
     <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
