@@ -4,7 +4,7 @@
 A Streaming website having movies, web series which are sorted accoriding to the genres and has premium subscription support as well.
 
 
-![Logo](C:\Users\MSHOME\Desktop\Newfolder\Streaming\MovieStreamingWebsite\Images\Logo\TheaterLogo.png)
+![Logo](Images\Logo\TheaterLogo.png)
 
 
 ## Tech Stack
