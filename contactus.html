@@ -163,8 +163,10 @@
 
 <body>
 
+<div class="box">
 
   <div class="scroll-bar">
+    
     <!-- navbar starts -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="header-nav">
@@ -222,7 +224,74 @@
         </div>
       </div>
       </nav>
-
+      <div class="container">
+        <div id="movies" class="row"></div>
+      </div>
+      <hr>
+  
+  
+      <div class="box">
+  
+        <div class="text">
+          <h1 text-align ="center">Contact Us</h1>
+          <div class="redline"></div>
+          <p>Have Questions ? We have answers ( may be )</p>
+        </div>
+      </div>
+  
+      <div class="touch">
+        <h2>Get in touch</h2>
+        <div class="redline"></div>
+      </div>
+      <div class="container fill">
+        <div class="forthis">
+          <form action="https://formcarry.com/s/S1peCWurw0C" method="POST" name="contact-form" id="contact-form" onsubmit="return validateForm();">
+            <div class="form-row two2">
+              <div class="form-group col-md-6 column">
+                <input type="text" class="form-control input" id="firstname" name="firstname" placeholder=" " >
+                <label for="firstname" class="">First Name</label>
+                <div class="underline">
+                </div>
+              </div>
+              <div class="form-group col-md-6 column">
+                <input type="text" class="form-control input" id="lastname" name="lastname" placeholder=" " >
+                <label for="lastname" class="">Last Name</label>
+                <div class="underline"></div>
+              </div>
+            </div>
+            <div class="form-row one1">
+              <div class="form-group col-lg-6 column">
+                <input type="text" class="form-control input" id="email" name="email" placeholder=" " >
+                <label for="email" class="">Email</label>
+                <div class="underline"></div>
+              </div>
+              <div class="form-group col-lg-6 column">
+                <input type="text" class="form-control input" id="phone" name="phone"  placeholder=" ">
+                <label for="number" class="">Phone Number</label>
+                <div class="underline"></div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group column">
+                <input type="text" class="form-control input" name="subject" id="subject" placeholder=" " >
+                <label for="subject" class="">Subject</label>
+                <div class="underline extra"></div>
+              </div>
+            </div>
+            <div class="form-row size">
+              <div class="form-group column">
+                <textarea type="text" class="form-control input" name="message" id="message" rows="5"  placeholder=" "></textarea>
+                <label for="message" class="">Message</label>
+                <div class="underline extra gap"></div>
+              </div>
+            </div>
+            <div class="btn-sm">
+              <input type="submit" value="SEND MESSAGE" class="sm-button" id="submit-btn"> 
+              <a href="#" onclick="clearFunc()">Reset</a>
+            </div>
+          </form>
+        </div>
+      </div>
     <div class="container address">
       <div class="row add-row">
         <div class="col-sm-6">
@@ -232,17 +301,40 @@
           <p>VJTI , Matunga, Mumbai</p>
           <p>Maharashtra</p>
           <p>India - 400014</p>
-          
+        </div>
+    </div>    
+    <footer class="footer">
+      <hr class="footer-hr">
+      <div class="footer-right">
+        <div class="footer-right">
+          <div class="transbox">
+           
+          <a href="home.html"><img class="footer-logo" src="Images/Logo/TheaterLogo.png" alt="" width="30"
+              height="24"></a>
+          <p class="footer-bottom-tagline">Watch! Chill! Repeat!</p>
+          </div>
+        </div>
+ 
+          </ul>
+        </div>
        
+        
+        <div class="footer-right">
+          <p class="footer-links">
+          <h2 class="footer-heading">Contact Us</h2>
+          <p class="footer-bottom-tagline">We would be very happy to hear from you.</p>
+          <a class="footer-contact-button" href="contactus.html">Contact Us</a>
+          </p>
 
 
+    
     <!-- offcanva JS and footer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
 
     <div class="bottom-gap"></div>
-
+  </div>
 </body>
 
 </html>
