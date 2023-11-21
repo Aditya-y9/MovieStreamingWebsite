@@ -1,4 +1,4 @@
-
+# NOT FROM SCRATCH
 # Streaming Website
 
 A Streaming website having movies, web series which are sorted accoriding to the genres and has premium subscription support as well.
